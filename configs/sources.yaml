@@ -1,0 +1,389 @@
+# Locked on 1 November 2026. The crawler may fetch primary urls only.
+# Alternate urls are the same text on another official host. Do not download both.
+# Germany, BAMF, and make-it-in-germany.com stay out until the post-day-22 phase.
+# The 2020 Stipendium Hungaricum rules PDF is omitted: the Operational Regulations
+# effective 31 August 2026 replace it.
+# Enter Hungary is the application portal, not a rule text, so it is not listed.
+
+locked_on: "2026-11-01"
+scope:
+  country: HU
+  institutions: [OIF, TPF, NJT, ELTE, BME, NJE, EU]
+  topics:
+    - student_residence_permit
+    - work_during_studies
+    - stipendium_hungaricum
+    - university_regulations
+    - eu_student_mobility
+
+crawl:
+  respect_robots_txt: true
+  allow_only_listed_urls: true
+  fetch_alternate_urls: false
+  user_agent: "StudyAbroadLawAssistant/0.1 (educational portfolio; public official pages only)"
+
+sources:
+  - id: oif-student-residence-en
+    title: "Residence of the student, pupil"
+    url: "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+    publisher: "National Directorate-General for Aliens Policing (OIF)"
+    country: HU
+    institution: OIF
+    doc_type: factsheet
+    language: en
+    topics: [student_residence_permit, work_during_studies]
+    format: html
+    version_note: "English factsheet. Includes the 30 hours/week study-period work rule and the 90-day full-time rule outside term."
+    locked_on: "2026-11-01"
+
+  - id: oif-student-residence-hu
+    title: "A hallgató, tanuló tartózkodása"
+    url: "https://oif.gov.hu/tajekoztatok/a-hallgato-tanulo-tartozkodasa"
+    publisher: "National Directorate-General for Aliens Policing (OIF)"
+    country: HU
+    institution: OIF
+    doc_type: factsheet
+    language: hu
+    topics: [student_residence_permit, work_during_studies]
+    format: html
+    version_note: "Hungarian text of the student residence factsheet. If it disagrees with the English page, prefer this one."
+    locked_on: "2026-11-01"
+
+  - id: oif-higher-education-institutions
+    title: "For higher education institutions"
+    url: "https://oif.gov.hu/factsheets/for-higher-education-institutions"
+    publisher: "National Directorate-General for Aliens Policing (OIF)"
+    country: HU
+    institution: OIF
+    doc_type: factsheet
+    language: en
+    topics: [student_residence_permit, work_during_studies]
+    format: html
+    version_note: "Permit length (1 to 3 years) and the same weekly work limit, written for universities."
+    locked_on: "2026-11-01"
+
+  - id: oif-study-permit-extension
+    title: "How to extend your residence permit for the purpose of studies"
+    url: "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+    publisher: "National Directorate-General for Aliens Policing (OIF)"
+    country: HU
+    institution: OIF
+    doc_type: factsheet
+    language: en
+    topics: [student_residence_permit]
+    format: html
+    version_note: "Enter Hungary extension steps and the attachment list."
+    locked_on: "2026-11-01"
+
+  - id: oif-enter-hungary-student-manual
+    title: "EH manual for case uploading - student"
+    url: "https://www.oif.gov.hu/factsheets/eh-manual-for-case-uploading-student"
+    publisher: "National Directorate-General for Aliens Policing (OIF)"
+    country: HU
+    institution: OIF
+    doc_type: factsheet
+    language: en
+    topics: [student_residence_permit, stipendium_hungaricum]
+    format: html
+    version_note: "Upload checklist. Notes the fee exemption for Stipendium Hungaricum and similar state scholarships."
+    locked_on: "2026-11-01"
+
+  - id: oif-employer-obligations
+    title: "Obligations of the employer and host organization regarding third-country nationals"
+    url: "https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals"
+    publisher: "National Directorate-General for Aliens Policing (OIF)"
+    country: HU
+    institution: OIF
+    doc_type: factsheet
+    language: en
+    topics: [work_during_studies]
+    format: html
+    version_note: "Employer must notify the start of work for a study-permit holder within 5 days."
+    locked_on: "2026-11-01"
+
+  - id: njt-act-xc-2023
+    title: "Act XC of 2023 on the general rules of entry and residence of third-country nationals"
+    url: "https://njt.jog.gov.hu/jogszabaly/2023-90-00-00"
+    alternate_urls:
+      - "https://net.jogtar.hu/jogszabaly?docid=A2300090.TV"
+    publisher: "Nemzeti Jogszabálytár"
+    country: HU
+    institution: NJT
+    doc_type: statute
+    language: hu
+    topics: [student_residence_permit, work_during_studies]
+    format: html
+    version_note: "Fetch the in-force time state. Jogtár shows a new time state from 27 September 2026; do not store the 1 January 2026 to 26 September 2026 slice as current."
+    last_updated: "2026-09-27"
+    locked_on: "2026-11-01"
+
+  - id: njt-decree-35-2024
+    title: "Government Decree 35/2024 (II. 29.) implementing Act XC of 2023"
+    url: "https://njt.jog.gov.hu/jogszabaly/2024-35-20-22"
+    alternate_urls:
+      - "https://net.jogtar.hu/jogszabaly?docid=A2400035.KOR"
+    publisher: "Nemzeti Jogszabálytár"
+    country: HU
+    institution: NJT
+    doc_type: decree
+    language: hu
+    topics: [student_residence_permit, work_during_studies]
+    format: html
+    version_note: "Implementing decree. The Nemzeti Jogszabálytár page header read 7 October 2026."
+    last_updated: "2026-10-07"
+    locked_on: "2026-11-01"
+
+  - id: sh-operational-regulations
+    title: "Stipendium Hungaricum Operational Regulations"
+    url: "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: regulation
+    language: en
+    topics: [stipendium_hungaricum]
+    format: pdf
+    version_note: "Effective 31 August 2026. Approved by the Ministry of Foreign Affairs on 29 August 2026."
+    last_updated: "2026-08-31"
+    locked_on: "2026-11-01"
+
+  - id: sh-general-terms
+    title: "Stipendium Hungaricum General Terms and Conditions"
+    url: "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: regulation
+    language: en
+    topics: [stipendium_hungaricum]
+    format: pdf
+    version_note: "Bilingual PDF. Effective 1 September 2026. Monthly allowance figures live here."
+    last_updated: "2026-09-01"
+    locked_on: "2026-11-01"
+
+  - id: sh-call-ba-ma-2026-27
+    title: "Call for Applications 2026/2027, bachelor's, master's, one-tier master's and non-degree"
+    url: "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: call
+    language: en
+    topics: [stipendium_hungaricum]
+    format: pdf
+    version_note: "2026/2027 cycle. Linked from the official call page."
+    locked_on: "2026-11-01"
+
+  - id: sh-call-phd-2026-27
+    title: "Call for Applications 2026/2027, doctoral programmes"
+    url: "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: call
+    language: en
+    topics: [stipendium_hungaricum]
+    format: pdf
+    version_note: "2026/2027 doctoral call. Linked from the official call announcement."
+    locked_on: "2026-11-01"
+
+  - id: sh-application-guide-2026-27
+    title: "Application Guide for the Stipendium Hungaricum Programme 2026/2027"
+    url: "https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: guide
+    language: en
+    topics: [stipendium_hungaricum]
+    format: pdf
+    version_note: "How to fill the online application. It does not replace the Operational Regulations."
+    locked_on: "2026-11-01"
+
+  - id: sh-faq
+    title: "Stipendium Hungaricum FAQ"
+    url: "https://stipendiumhungaricum.hu/faq/"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: faq
+    language: en
+    topics: [stipendium_hungaricum]
+    format: html
+    version_note: "FAQ index. Day 2 should keep only answers on this host."
+    locked_on: "2026-11-01"
+
+  - id: sh-regulations-index
+    title: "Stipendium Hungaricum operational regulations index"
+    url: "https://stipendiumhungaricum.hu/apply_regulations/"
+    publisher: "Tempus Public Foundation"
+    country: HU
+    institution: TPF
+    doc_type: index
+    language: en
+    topics: [stipendium_hungaricum]
+    format: html
+    version_note: "Index page that points at the current regulations PDF."
+    locked_on: "2026-11-01"
+
+  - id: elte-regulations-index
+    title: "ELTE regulations"
+    url: "https://www.elte.hu/en/regulations"
+    publisher: "Eötvös Loránd University"
+    country: HU
+    institution: ELTE
+    doc_type: index
+    language: en
+    topics: [university_regulations]
+    format: html
+    version_note: "Index. The academic regulations PDF below is the text to quote."
+    locked_on: "2026-11-01"
+
+  - id: elte-academic-regulations-en
+    title: "ELTE Academic Regulations for Students, Volume 2"
+    url: "https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf"
+    publisher: "Eötvös Loránd University"
+    country: HU
+    institution: ELTE
+    doc_type: regulation
+    language: en
+    topics: [university_regulations]
+    format: pdf
+    version_note: "Amended version effective 1 September 2026."
+    last_updated: "2026-09-01"
+    locked_on: "2026-11-01"
+
+  - id: elte-international-guide-2026-27
+    title: "ELTE Information Guide for International Students 2026/2027"
+    url: "https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf"
+    publisher: "Eötvös Loránd University"
+    country: HU
+    institution: ELTE
+    doc_type: guide
+    language: en
+    topics: [university_regulations, stipendium_hungaricum]
+    format: pdf
+    version_note: "2026/2027 guide. It points students back to the academic regulations and the scholarship rules."
+    locked_on: "2026-11-01"
+
+  - id: bme-rules-index
+    title: "BME rules and regulations"
+    url: "https://etk.bme.hu/en/for-students/rules-and-regulations/"
+    publisher: "Budapest University of Technology and Economics"
+    country: HU
+    institution: BME
+    doc_type: index
+    language: en
+    topics: [university_regulations]
+    format: html
+    version_note: "English index of the Academic Services Centre."
+    locked_on: "2026-11-01"
+
+  - id: bme-code-of-studies-en
+    title: "BME Code of Studies and Exams (English)"
+    url: "https://www.kth.bme.hu/document/2969/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf"
+    publisher: "Budapest University of Technology and Economics"
+    country: HU
+    institution: BME
+    doc_type: regulation
+    language: en
+    topics: [university_regulations]
+    format: pdf
+    version_note: "Official English translation consolidated through February 2024. The PDF says the Hungarian version prevails if the two differ."
+    last_updated: "2024-02-01"
+    locked_on: "2026-11-01"
+
+  - id: bme-tvsz-hu
+    title: "BME Tanulmányi és Vizsgaszabályzat"
+    url: "https://szabalyozastar.bme.hu/storage/documents/szenatus/X./10./2015-2016./bme_tvsz_2016_elfogadott_mod_20250717_t_s_20250717143237.pdf"
+    publisher: "Budapest University of Technology and Economics"
+    country: HU
+    institution: BME
+    doc_type: regulation
+    language: hu
+    topics: [university_regulations]
+    format: pdf
+    version_note: "Hungarian code effective 17 July 2025, linked from the Central Academic Office rules page. Prefer this over the older English PDF."
+    last_updated: "2025-07-17"
+    locked_on: "2026-11-01"
+
+  - id: nje-regulations-index
+    title: "John von Neumann University regulations"
+    url: "https://nje.hu/en/regulation-and-documents"
+    publisher: "John von Neumann University"
+    country: HU
+    institution: NJE
+    doc_type: index
+    language: en
+    topics: [university_regulations]
+    format: html
+    version_note: "Kecskemét. Index of the organisational rules. Quote the academic regulations PDF, not this index."
+    locked_on: "2026-11-01"
+
+  - id: nje-academic-regulations-en
+    title: "John von Neumann University Academic and Examination Regulations"
+    url: "https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f"
+    publisher: "John von Neumann University"
+    country: HU
+    institution: NJE
+    doc_type: regulation
+    language: en
+    topics: [university_regulations]
+    format: pdf
+    version_note: "6th version. Senate resolution 18/2026 (V.28). In force 1 June 2026. This is the file linked from the regulations page on 1 November 2026."
+    last_updated: "2026-06-01"
+    locked_on: "2026-11-01"
+
+  - id: nje-study-guide-2026-27
+    title: "John von Neumann University Study Guide 2026/2027"
+    url: "https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2"
+    publisher: "John von Neumann University"
+    country: HU
+    institution: NJE
+    doc_type: guide
+    language: en
+    topics: [university_regulations, student_residence_permit]
+    format: pdf
+    version_note: "Fall 2026/27 guide linked from https://nje.hu/en/practical-information/study-guide. Covers enrolment, Neptun, and picking up the residence permit at the International Office."
+    locked_on: "2026-11-01"
+
+  - id: nje-visa-residence
+    title: "Visa and residence permit"
+    url: "https://nje.hu/en/practical-information/visa-and-residence-permit"
+    publisher: "John von Neumann University"
+    country: HU
+    institution: NJE
+    doc_type: guide
+    language: en
+    topics: [student_residence_permit, university_regulations]
+    format: html
+    version_note: "University page for the Kecskemét client office. OIF factsheets remain the legal source for permit conditions."
+    locked_on: "2026-11-01"
+
+  - id: eurlex-directive-2016-801
+    title: "Directive (EU) 2016/801 on entry and residence for research, studies and training"
+    url: "https://eur-lex.europa.eu/eli/dir/2016/801/oj/eng"
+    publisher: "EUR-Lex"
+    country: EU
+    institution: EU
+    doc_type: directive
+    language: en
+    topics: [eu_student_mobility, student_residence_permit]
+    format: html
+    version_note: "Official Journal text. Hungary's Act XC of 2023 is the national rule to cite for a permit inside Hungary."
+    last_updated: "2016-05-11"
+    locked_on: "2026-11-01"
+
+  - id: eu-portal-student-hungary
+    title: "Student in Hungary"
+    url: "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+    publisher: "European Commission, EU Immigration Portal"
+    country: EU
+    institution: EU
+    doc_type: portal
+    language: en
+    topics: [eu_student_mobility, student_residence_permit, work_during_studies]
+    format: html
+    version_note: "Page dated 18 September 2025. A summary of the national procedure, not a substitute for OIF or the statute."
+    last_updated: "2025-09-18"
+    locked_on: "2026-11-01"
