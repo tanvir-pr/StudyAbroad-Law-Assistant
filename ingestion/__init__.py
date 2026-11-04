@@ -1,1 +1,1 @@
-"""Load and, from day 2, download the locked official allow-list."""
+"""Load the allow-list and download the pages robots.txt permits."""

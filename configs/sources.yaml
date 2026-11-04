@@ -202,7 +202,7 @@ sources:
 
   - id: sh-faq
     title: "Stipendium Hungaricum FAQ"
-    url: "https://stipendiumhungaricum.hu/faq/"
+    url: "https://stipendiumhungaricum.hu/scholarship-holders/"
     publisher: "Tempus Public Foundation"
     country: HU
     institution: TPF
@@ -210,12 +210,12 @@ sources:
     language: en
     topics: [stipendium_hungaricum]
     format: html
-    version_note: "FAQ index. Day 2 should keep only answers on this host."
+    version_note: "Scholarship-holder FAQ, including residence and the 30-hour work rule. The old /faq/ index returned HTTP 404 on 4 November 2026."
     locked_on: "2026-11-01"
 
   - id: sh-regulations-index
     title: "Stipendium Hungaricum operational regulations index"
-    url: "https://stipendiumhungaricum.hu/apply_regulations/"
+    url: "https://stipendiumhungaricum.hu/apply/"
     publisher: "Tempus Public Foundation"
     country: HU
     institution: TPF
@@ -223,7 +223,7 @@ sources:
     language: en
     topics: [stipendium_hungaricum]
     format: html
-    version_note: "Index page that points at the current regulations PDF."
+    version_note: "Current index of the operational regulations. /apply_regulations/ returned HTTP 404 on 4 November 2026."
     locked_on: "2026-11-01"
 
   - id: elte-regulations-index
@@ -276,12 +276,14 @@ sources:
     language: en
     topics: [university_regulations]
     format: html
-    version_note: "English index of the Academic Services Centre."
+    version_note: "English index of the Academic Services Centre. On 4 November 2026 the host certificate did not verify, so the crawler does not download this page. The code PDFs below are the texts to quote."
     locked_on: "2026-11-01"
 
   - id: bme-code-of-studies-en
     title: "BME Code of Studies and Exams (English)"
-    url: "https://www.kth.bme.hu/document/2969/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf"
+    url: "https://vik.bme.hu/document/6459/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf"
+    alternate_urls:
+      - "https://www.kth.bme.hu/document/2969/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf"
     publisher: "Budapest University of Technology and Economics"
     country: HU
     institution: BME
@@ -289,7 +291,7 @@ sources:
     language: en
     topics: [university_regulations]
     format: pdf
-    version_note: "Official English translation consolidated through February 2024. The PDF says the Hungarian version prevails if the two differ."
+    version_note: "Official English translation consolidated through February 2024, served by vik.bme.hu. The same file on kth.bme.hu is not fetched because that host certificate does not verify. The PDF says the Hungarian version prevails if the two differ."
     last_updated: "2024-02-01"
     locked_on: "2026-11-01"
 
@@ -370,7 +372,7 @@ sources:
     language: en
     topics: [eu_student_mobility, student_residence_permit]
     format: html
-    version_note: "Official Journal text. Hungary's Act XC of 2023 is the national rule to cite for a permit inside Hungary."
+    version_note: "Official Journal text. Hungary's Act XC of 2023 is the national rule to cite for a permit inside Hungary. On 4 November 2026 EUR-Lex answered HTTP 202 with an empty body, so this directive is not in the local corpus yet."
     last_updated: "2016-05-11"
     locked_on: "2026-11-01"
 

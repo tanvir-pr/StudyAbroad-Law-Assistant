@@ -2,13 +2,13 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 1 of 22 is the locked source list. Nothing is downloaded yet, and the assistant does not answer questions yet.
+Day 2 of 22 downloads the locked list. The assistant does not answer questions yet. PDF text extraction is day 3.
 
 ## Scope locked on 1 November 2026
 
 Hungary only: student residence permits, work during studies, Stipendium Hungaricum, plus the public study rules of ELTE, BME, and John von Neumann University (Kecskemét). EU context is Directive (EU) 2016/801 and the EU Immigration Portal page for students in Hungary.
 
-The allow-list is [configs/sources.yaml](configs/sources.yaml). Twenty-seven public URLs. The crawler, when it is written on day 2, may fetch the primary URL of each entry and must respect `robots.txt`. Alternate URLs are the same text on another official host and are not fetched.
+The allow-list is [configs/sources.yaml](configs/sources.yaml). Twenty-seven public URLs. The crawler fetches the primary URL of each entry and must respect `robots.txt`. Alternate URLs are the same text on another official host and are not fetched.
 
 Pages left out on purpose:
 
@@ -25,6 +25,10 @@ pytest
 
 `pytest` checks that every source has a unique id, a required field set, and an `https` URL.
 
-## What day 2 adds
+## Download the allow-list
 
-A crawler that downloads only this list into `data/raw/`, which stays out of git.
+```bash
+python -m ingestion.crawl
+```
+
+Raw files land in `data/raw/`, which stays out of git. Each saved page gets a `.meta.json` with country, institution, doc type, language, source URL, last-updated, and retrieved-at. HTML pages also get a `.txt` file. A URL that `robots.txt` disallows is recorded in `manifest.json` and not downloaded. PDF text is extracted on day 3.
