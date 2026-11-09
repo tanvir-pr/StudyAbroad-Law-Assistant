@@ -1,0 +1,9 @@
+# Day 4 retrieval. Generation stays on day 5.
+embedding_model: BAAI/bge-m3
+batch_size: 8
+chunking:
+  strategy: fixed
+  size: 1200
+  overlap: 200
+index_dir: data/index
+top_k: 5

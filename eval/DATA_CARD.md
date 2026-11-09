@@ -1,6 +1,6 @@
 # Data card — Hungary student-rules corpus
 
-Draft for day 3. This is not legal advice. The files under `data/raw/` are local copies of public official pages and are not committed.
+Draft for day 4. This is not legal advice. The files under `data/raw/` and `data/index/` are local copies and a local FAISS index. They are not committed.
 
 ## What this is
 
@@ -21,7 +21,10 @@ Hungary only: student residence permits, work during studies, Stipendium Hungari
 | Not saved | 1 |
 | HTML pages with extracted text | 15 |
 | PDFs with extracted text | 11 |
-| Golden questions | 15 |
+| Golden questions | 40 |
+| Chunk size / overlap | 1,200 / 200 characters |
+| Embedding model | BAAI/bge-m3 |
+| Dense index | FAISS IndexFlatIP, under `data/index/` |
 
 The one page not saved is the BME English rules index at `etk.bme.hu`. Its TLS certificate did not verify, so the crawler did not download it. The English Code of Studies (from `vik.bme.hu`) and the Hungarian TVSZ are in the corpus. If those two disagree, the English PDF says the Hungarian text prevails.
 

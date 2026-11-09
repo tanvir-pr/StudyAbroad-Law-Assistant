@@ -2,7 +2,7 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 3 of 22 extracts PDF text and freezes the first 15 golden questions. The assistant does not answer questions yet.
+Day 4 of 22 splits the saved texts into fixed chunks, embeds them with BAAI/bge-m3, and stores a FAISS index. The golden set is 40 questions. The assistant does not write an answer yet.
 
 ## Scope locked on 1 November 2026
 
@@ -37,4 +37,18 @@ Raw files land in `data/raw/`, which stays out of git. Each saved page gets a `.
 python -m ingestion.parse_pdf
 ```
 
-The evaluation set is [eval/golden_set.jsonl](eval/golden_set.jsonl): 15 questions with reference answers and source URLs. It is described in [eval/DATA_CARD.md](eval/DATA_CARD.md). Do not add those questions to the fine-tuning set. A URL that `robots.txt` disallows, or whose certificate does not verify, is recorded in `manifest.json` and not downloaded.
+The evaluation set is [eval/golden_set.jsonl](eval/golden_set.jsonl): 40 questions with reference answers and source URLs. It is described in [eval/DATA_CARD.md](eval/DATA_CARD.md). Do not add those questions to the fine-tuning set. A URL that `robots.txt` disallows, or whose certificate does not verify, is recorded in `manifest.json` and not downloaded.
+
+## Build the FAISS index
+
+```bash
+python -m rag.index_faiss
+```
+
+Chunk size is 1,200 characters with a 200-character overlap (`configs/rag.yaml`). Embeddings are `BAAI/bge-m3`, L2-normalised, searched with inner product. The index is written to `data/index/` and is not committed. The golden questions are not indexed.
+
+Search the saved index without rebuilding it:
+
+```bash
+python -m rag.index_faiss --query "how many hours a week may a student work"
+```
