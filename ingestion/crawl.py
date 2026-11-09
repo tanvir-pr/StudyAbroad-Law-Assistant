@@ -81,7 +81,7 @@ def crawl(
         )
 
     manifest = raw_dir / "manifest.json"
-    manifest.write_text(json.dumps(records, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    _merge_manifest(manifest, records)
     return records
 
 
@@ -179,6 +179,21 @@ def _fetch_one(
     )
     _write_meta(raw_dir, source["id"], record)
     return record
+
+
+def _merge_manifest(manifest: Path, records: list[dict]) -> list[dict]:
+    existing: list[dict] = []
+    if manifest.exists():
+        existing = json.loads(manifest.read_text(encoding="utf-8"))
+    by_id = {row["source_id"]: row for row in existing}
+    order = [row["source_id"] for row in existing]
+    for record in records:
+        if record["source_id"] not in by_id:
+            order.append(record["source_id"])
+        by_id[record["source_id"]] = record
+    merged = [by_id[source_id] for source_id in order]
+    manifest.write_text(json.dumps(merged, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return merged
 
 
 def _skipped(source: dict, retrieved_at: datetime, reason: str, **extra) -> dict:

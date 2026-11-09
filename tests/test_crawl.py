@@ -33,6 +33,7 @@ def test_robots_404_allows_and_disallow_blocks():
     assert robots_allows(rules, 200, agent, "https://example.com/rules")
     assert not robots_allows(rules, 200, agent, "https://example.com/private/page")
     assert not robots_allows("ignored", 503, agent, "https://example.com/rules")
+    assert robots_allows("", 202, agent, "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801")
 
 
 def test_html_parser_drops_script_and_keeps_the_rule():

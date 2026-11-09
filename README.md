@@ -2,7 +2,7 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 2 of 22 downloads the locked list. The assistant does not answer questions yet. PDF text extraction is day 3.
+Day 3 of 22 extracts PDF text and freezes the first 15 golden questions. The assistant does not answer questions yet.
 
 ## Scope locked on 1 November 2026
 
@@ -31,4 +31,10 @@ pytest
 python -m ingestion.crawl
 ```
 
-Raw files land in `data/raw/`, which stays out of git. Each saved page gets a `.meta.json` with country, institution, doc type, language, source URL, last-updated, and retrieved-at. HTML pages also get a `.txt` file. A URL that `robots.txt` disallows is recorded in `manifest.json` and not downloaded. PDF text is extracted on day 3.
+Raw files land in `data/raw/`, which stays out of git. Each saved page gets a `.meta.json` with country, institution, doc type, language, source URL, last-updated, and retrieved-at. HTML is parsed during the download. PDFs are parsed afterwards:
+
+```bash
+python -m ingestion.parse_pdf
+```
+
+The evaluation set is [eval/golden_set.jsonl](eval/golden_set.jsonl): 15 questions with reference answers and source URLs. It is described in [eval/DATA_CARD.md](eval/DATA_CARD.md). Do not add those questions to the fine-tuning set. A URL that `robots.txt` disallows, or whose certificate does not verify, is recorded in `manifest.json` and not downloaded.

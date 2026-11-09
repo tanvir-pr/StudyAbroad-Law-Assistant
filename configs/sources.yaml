@@ -364,7 +364,9 @@ sources:
 
   - id: eurlex-directive-2016-801
     title: "Directive (EU) 2016/801 on entry and residence for research, studies and training"
-    url: "https://eur-lex.europa.eu/eli/dir/2016/801/oj/eng"
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801"
+    alternate_urls:
+      - "https://eur-lex.europa.eu/eli/dir/2016/801/oj/eng"
     publisher: "EUR-Lex"
     country: EU
     institution: EU
@@ -372,7 +374,7 @@ sources:
     language: en
     topics: [eu_student_mobility, student_residence_permit]
     format: html
-    version_note: "Official Journal text. Hungary's Act XC of 2023 is the national rule to cite for a permit inside Hungary. On 4 November 2026 EUR-Lex answered HTTP 202 with an empty body, so this directive is not in the local corpus yet."
+    version_note: "Official Journal HTML for CELEX 32016L0801. The ELI page returned HTTP 202 with an empty body on 4 November 2026, so this HTML copy is the text to quote. Hungary's Act XC of 2023 is the national rule for a permit inside Hungary."
     last_updated: "2016-05-11"
     locked_on: "2026-11-01"
 
