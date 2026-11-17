@@ -1,0 +1,528 @@
+{
+  "source_run": "eval/results/ragas_v0.2.json",
+  "n_examples": 30,
+  "category_counts": {
+    "wrong_source_top": 15,
+    "diluted_context": 7,
+    "low_faithfulness": 1,
+    "low_relevancy": 7
+  },
+  "category_definitions": {
+    "wrong_source_top": "Gold source missing from top-k (context_recall = 0)",
+    "diluted_context": "Gold source present but context_precision < 0.4",
+    "low_relevancy": "Answer relevancy < 0.35 while context_recall = 1",
+    "low_faithfulness": "Faithfulness < 0.7"
+  },
+  "examples": [
+    {
+      "id": "g62",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "sh-regulations-index",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "elte-academic-regulations-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2799,
+      "answer": "e cases described in the [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice."
+    },
+    {
+      "id": "g106",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "bme-tvsz-hu",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2813,
+      "answer": "es to whom the original decision was delivered concerning the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice."
+    },
+    {
+      "id": "g67",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "bme-tvsz-hu",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "elte-regulations-index",
+        "elte-regulations-index",
+        "bme-code-of-studies-en",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2889,
+      "answer": "her the following [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice."
+    },
+    {
+      "id": "g86",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "nje-study-guide-2026-27",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-study-permit-extension",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3033,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g41",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "oif-student-residence-hu",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "sh-regulations-index",
+        "sh-regulations-index",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3233,
+      "answer": "s, along with non-EU nationals living in the EU or visiting the EU as tourists, exchange students or for business purposes, anyone legally present in the EU. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not leg"
+    },
+    {
+      "id": "g42",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "nje-study-guide-2026-27",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3243,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g66",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "elte-regulations-index",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3479,
+      "answer": "ages on the basis of which grants are paid, are to be allocated to the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice."
+    },
+    {
+      "id": "g92",
+      "error_category": "diluted_context",
+      "gold_source_id": "oif-student-residence-en",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.292,
+      "answer": "tution, we recommend that together with a bank balance statement, you also submit a transaction statement, which credibly attests to your right to dispose of the amount in question. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice."
+    },
+    {
+      "id": "g139",
+      "error_category": "diluted_context",
+      "gold_source_id": "nje-study-guide-2026-27",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2944,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g113",
+      "error_category": "diluted_context",
+      "gold_source_id": "nje-academic-regulations-en",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.3254,
+      "answer": "en the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice."
+    },
+    {
+      "id": "g126",
+      "error_category": "diluted_context",
+      "gold_source_id": "sh-call-ba-ma-2026-27",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-operational-regulations",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3328,
+      "answer": "4. Institutions and partner organisations will be granted access rights by the Public Foundation [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice."
+    },
+    {
+      "id": "g141",
+      "error_category": "diluted_context",
+      "gold_source_id": "sh-application-guide-2026-27",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3398,
+      "answer": "B , Republic of Srpska and from the Kurdish [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice."
+    },
+    {
+      "id": "g80",
+      "error_category": "diluted_context",
+      "gold_source_id": "sh-general-terms",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index",
+        "sh-general-terms",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3572,
+      "answer": "“The institute may terminate the status of the scholarship holder by a unilateral declaration after consulting. [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice."
+    },
+    {
+      "id": "g124",
+      "error_category": "diluted_context",
+      "gold_source_id": "sh-call-ba-ma-2026-27",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index"
+      ],
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3664,
+      "answer": "It means that the date of the issue on the document cannot be earlier than 1 [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice."
+    },
+    {
+      "id": "g122",
+      "error_category": "low_faithfulness",
+      "gold_source_id": "oif-study-permit-extension",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-study-permit-extension",
+        "oif-study-permit-extension",
+        "oif-enter-hungary-student-manual",
+        "oif-student-residence-en"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.3042,
+      "answer": "ys [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice."
+    },
+    {
+      "id": "g114",
+      "error_category": "low_relevancy",
+      "gold_source_id": "nje-study-guide-2026-27",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2744,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g32",
+      "error_category": "low_relevancy",
+      "gold_source_id": "nje-academic-regulations-en",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "nje-study-guide-2026-27"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.278,
+      "answer": "ence in the country after your arrival, please inform the International Office. [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice."
+    },
+    {
+      "id": "g36",
+      "error_category": "low_relevancy",
+      "gold_source_id": "oif-enter-hungary-student-manual",
+      "retrieved_source_ids": [
+        "oif-enter-hungary-student-manual",
+        "oif-enter-hungary-student-manual",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2801,
+      "answer": "nying persons. Please note that under the current legislation, a third-country national holding [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice."
+    },
+    {
+      "id": "g135",
+      "error_category": "low_relevancy",
+      "gold_source_id": "sh-general-terms",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-operational-regulations",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3007,
+      "answer": "he cases set out in the Operational Regulations and the [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice."
+    },
+    {
+      "id": "g117",
+      "error_category": "low_relevancy",
+      "gold_source_id": "oif-enter-hungary-student-manual",
+      "retrieved_source_ids": [
+        "oif-enter-hungary-student-manual",
+        "oif-enter-hungary-student-manual",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "sh-faq"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3207,
+      "answer": "on the website. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g146",
+      "error_category": "low_relevancy",
+      "gold_source_id": "sh-operational-regulations",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "sh-operational-regulations",
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3288,
+      "answer": "ement of the [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice."
+    },
+    {
+      "id": "g28",
+      "error_category": "low_relevancy",
+      "gold_source_id": "sh-general-terms",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-general-terms"
+      ],
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2865,
+      "answer": "tónak [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice."
+    },
+    {
+      "id": "g148",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "bme-tvsz-hu",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "sh-application-guide-2026-27",
+        "bme-code-of-studies-en",
+        "sh-regulations-index",
+        "elte-regulations-index"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3488,
+      "answer": "cluding [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice."
+    },
+    {
+      "id": "g142",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "njt-decree-35-2024",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "nje-study-guide-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3496,
+      "answer": "ers in the [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice."
+    },
+    {
+      "id": "g133",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "oif-student-residence-hu",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3562,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://st"
+    },
+    {
+      "id": "g70",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "sh-faq",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3676,
+      "answer": "a Diaspora Scholarship holder student, turn to the Diaspora Mentoring Program: [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g51",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "njt-decree-35-2024",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "nje-academic-regulations-en",
+        "oif-higher-education-institutions"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3714,
+      "answer": "U or multilateral program that includes mobility measures, or an agreement between two or more higher education institutions. [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice."
+    },
+    {
+      "id": "g109",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "oif-study-permit-extension",
+      "retrieved_source_ids": [
+        "oif-enter-hungary-student-manual",
+        "elte-international-guide-2026-27",
+        "sh-regulations-index",
+        "oif-student-residence-en",
+        "sh-application-guide-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.4089,
+      "answer": "p [oif-enter-hungary-student-manual](https://www.oif.gov.hu/factsheets/eh-manual-for-case-uploading-student). Not legal advice."
+    },
+    {
+      "id": "g35",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "njt-act-xc-2023",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "oif-student-residence-en",
+        "oif-enter-hungary-student-manual",
+        "oif-higher-education-institutions",
+        "elte-international-guide-2026-27"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4332,
+      "answer": "visa / residence permit here. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice."
+    },
+    {
+      "id": "g150",
+      "error_category": "wrong_source_top",
+      "gold_source_id": "njt-act-xc-2023",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-higher-education-institutions",
+        "eurlex-directive-2016-801",
+        "sh-operational-regulations",
+        "oif-higher-education-institutions"
+      ],
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.4595,
+      "answer": "at laid down in Regulation (EC) No 1030/2002 and enter ‘researcher-mobility’ on the residence permit. When the authorisation for long-term mobility is issued to a researcher in the form of a long-stay visa, Member States shall enter ‘researcher-mobility’ under the heading ‘remark [eurlex-directive-2"
+    }
+  ]
+}

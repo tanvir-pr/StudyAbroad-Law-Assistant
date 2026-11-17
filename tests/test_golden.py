@@ -5,9 +5,9 @@ from ingestion.sources import iter_sources
 GOLDEN = __import__("pathlib").Path(__file__).resolve().parents[1] / "eval" / "golden_set.jsonl"
 
 
-def test_golden_set_has_forty_questions_cited_to_the_allowlist():
+def test_golden_set_has_one_hundred_fifty_questions_cited_to_the_allowlist():
     rows = [json.loads(line) for line in GOLDEN.read_text(encoding="utf-8").splitlines() if line.strip()]
-    assert len(rows) == 40
+    assert len(rows) == 150
     urls = {source["url"] for source in iter_sources()}
     ids = {source["id"] for source in iter_sources()}
     seen = set()

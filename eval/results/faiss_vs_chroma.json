@@ -1,0 +1,28 @@
+{
+  "embedder": "BAAI/bge-m3",
+  "index_dir": "E:\\Ai ml all project\\Phase 4 Sequence, NLP and LLM\\Project2\\data\\index",
+  "chroma_dir": "E:\\Ai ml all project\\Phase 4 Sequence, NLP and LLM\\Project2\\data\\index\\chroma",
+  "note": "Chroma vectors are copied from the FAISS IndexFlatIP (same embeddings).",
+  "backends": [
+    {
+      "backend": "faiss",
+      "n_questions": 90,
+      "recall@1": 0.4778,
+      "recall@3": 0.6556,
+      "recall@5": 0.7333,
+      "recall@1_count": 43,
+      "recall@3_count": 59,
+      "recall@5_count": 66
+    },
+    {
+      "backend": "chroma",
+      "n_questions": 90,
+      "recall@1": 0.4778,
+      "recall@3": 0.6556,
+      "recall@5": 0.7333,
+      "recall@1_count": 43,
+      "recall@3_count": 59,
+      "recall@5_count": 66
+    }
+  ]
+}

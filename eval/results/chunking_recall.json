@@ -1,0 +1,350 @@
+{
+  "embedder": "HashEmbedder(dim=64)",
+  "chunk_size": 1200,
+  "overlap": 200,
+  "ks": [
+    1,
+    3,
+    5
+  ],
+  "strategies": [
+    {
+      "strategy": "fixed",
+      "chunk_count_indexed": 3920,
+      "avg_chunks_per_gold_source_pass": 117.35,
+      "span_coverage": 0.9333,
+      "span_hits": 56,
+      "n_questions": 60,
+      "recall@1": 0.1833,
+      "recall@3": 0.3167,
+      "recall@5": 0.3667,
+      "recall@1_count": 11,
+      "recall@3_count": 19,
+      "recall@5_count": 22
+    },
+    {
+      "strategy": "recursive",
+      "chunk_count_indexed": 3487,
+      "avg_chunks_per_gold_source_pass": 104.78,
+      "span_coverage": 0.9333,
+      "span_hits": 56,
+      "n_questions": 60,
+      "recall@1": 0.1333,
+      "recall@3": 0.2667,
+      "recall@5": 0.3167,
+      "recall@1_count": 8,
+      "recall@3_count": 16,
+      "recall@5_count": 19
+    },
+    {
+      "strategy": "section_aware",
+      "chunk_count_indexed": 4627,
+      "avg_chunks_per_gold_source_pass": 143.32,
+      "span_coverage": 0.9333,
+      "span_hits": 56,
+      "n_questions": 60,
+      "recall@1": 0.1333,
+      "recall@3": 0.2833,
+      "recall@5": 0.3167,
+      "recall@1_count": 8,
+      "recall@3_count": 17,
+      "recall@5_count": 19
+    }
+  ],
+  "example_rows": {
+    "fixed": [
+      {
+        "id": "g01",
+        "source_id": "oif-student-residence-en",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "oif-student-residence-hu",
+          "bme-tvsz-hu",
+          "njt-act-xc-2023"
+        ]
+      },
+      {
+        "id": "g02",
+        "source_id": "oif-student-residence-en",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "sh-application-guide-2026-27",
+          "sh-application-guide-2026-27",
+          "bme-code-of-studies-en",
+          "nje-academic-regulations-en",
+          "sh-application-guide-2026-27"
+        ]
+      },
+      {
+        "id": "g03",
+        "source_id": "oif-higher-education-institutions",
+        "hit_at_5": true,
+        "top_source_ids": [
+          "oif-higher-education-institutions",
+          "oif-higher-education-institutions",
+          "oif-student-residence-en",
+          "oif-student-residence-en",
+          "elte-academic-regulations-en"
+        ]
+      },
+      {
+        "id": "g04",
+        "source_id": "oif-higher-education-institutions",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "njt-decree-35-2024",
+          "oif-student-residence-en",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "eu-portal-student-hungary"
+        ]
+      },
+      {
+        "id": "g05",
+        "source_id": "eu-portal-student-hungary",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "elte-academic-regulations-en",
+          "eurlex-directive-2016-801",
+          "eurlex-directive-2016-801",
+          "elte-international-guide-2026-27",
+          "sh-application-guide-2026-27"
+        ]
+      },
+      {
+        "id": "g06",
+        "source_id": "oif-study-permit-extension",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "sh-faq",
+          "oif-student-residence-en",
+          "sh-application-guide-2026-27",
+          "nje-study-guide-2026-27",
+          "sh-regulations-index"
+        ]
+      },
+      {
+        "id": "g07",
+        "source_id": "eu-portal-student-hungary",
+        "hit_at_5": true,
+        "top_source_ids": [
+          "elte-academic-regulations-en",
+          "eu-portal-student-hungary",
+          "bme-tvsz-hu",
+          "njt-decree-35-2024",
+          "bme-tvsz-hu"
+        ]
+      },
+      {
+        "id": "g08",
+        "source_id": "oif-employer-obligations",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu"
+        ]
+      }
+    ],
+    "recursive": [
+      {
+        "id": "g01",
+        "source_id": "oif-student-residence-en",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "oif-student-residence-hu",
+          "bme-tvsz-hu"
+        ]
+      },
+      {
+        "id": "g02",
+        "source_id": "oif-student-residence-en",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "sh-application-guide-2026-27",
+          "sh-application-guide-2026-27",
+          "bme-code-of-studies-en",
+          "elte-international-guide-2026-27",
+          "nje-academic-regulations-en"
+        ]
+      },
+      {
+        "id": "g03",
+        "source_id": "oif-higher-education-institutions",
+        "hit_at_5": true,
+        "top_source_ids": [
+          "oif-student-residence-en",
+          "oif-higher-education-institutions",
+          "oif-student-residence-en",
+          "oif-student-residence-en",
+          "eu-portal-student-hungary"
+        ]
+      },
+      {
+        "id": "g04",
+        "source_id": "oif-higher-education-institutions",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "eu-portal-student-hungary",
+          "bme-tvsz-hu",
+          "njt-act-xc-2023",
+          "eu-portal-student-hungary",
+          "njt-decree-35-2024"
+        ]
+      },
+      {
+        "id": "g05",
+        "source_id": "eu-portal-student-hungary",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "sh-application-guide-2026-27",
+          "eurlex-directive-2016-801",
+          "sh-application-guide-2026-27",
+          "elte-international-guide-2026-27",
+          "eurlex-directive-2016-801"
+        ]
+      },
+      {
+        "id": "g06",
+        "source_id": "oif-study-permit-extension",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "oif-student-residence-en",
+          "njt-act-xc-2023",
+          "sh-application-guide-2026-27",
+          "eu-portal-student-hungary",
+          "sh-regulations-index"
+        ]
+      },
+      {
+        "id": "g07",
+        "source_id": "eu-portal-student-hungary",
+        "hit_at_5": true,
+        "top_source_ids": [
+          "oif-student-residence-en",
+          "elte-academic-regulations-en",
+          "eu-portal-student-hungary",
+          "bme-tvsz-hu",
+          "njt-decree-35-2024"
+        ]
+      },
+      {
+        "id": "g08",
+        "source_id": "oif-employer-obligations",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu"
+        ]
+      }
+    ],
+    "section_aware": [
+      {
+        "id": "g01",
+        "source_id": "oif-student-residence-en",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "bme-tvsz-hu",
+          "elte-international-guide-2026-27",
+          "oif-student-residence-hu",
+          "bme-tvsz-hu",
+          "njt-decree-35-2024"
+        ]
+      },
+      {
+        "id": "g02",
+        "source_id": "oif-student-residence-en",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "elte-international-guide-2026-27",
+          "bme-code-of-studies-en",
+          "nje-study-guide-2026-27",
+          "sh-regulations-index",
+          "elte-international-guide-2026-27"
+        ]
+      },
+      {
+        "id": "g03",
+        "source_id": "oif-higher-education-institutions",
+        "hit_at_5": true,
+        "top_source_ids": [
+          "oif-higher-education-institutions",
+          "oif-higher-education-institutions",
+          "elte-academic-regulations-en",
+          "oif-student-residence-en",
+          "oif-student-residence-en"
+        ]
+      },
+      {
+        "id": "g04",
+        "source_id": "oif-higher-education-institutions",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "oif-student-residence-en",
+          "njt-decree-35-2024",
+          "njt-decree-35-2024",
+          "njt-act-xc-2023",
+          "eu-portal-student-hungary"
+        ]
+      },
+      {
+        "id": "g05",
+        "source_id": "eu-portal-student-hungary",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "sh-application-guide-2026-27",
+          "sh-application-guide-2026-27",
+          "elte-academic-regulations-en",
+          "elte-academic-regulations-en",
+          "elte-international-guide-2026-27"
+        ]
+      },
+      {
+        "id": "g06",
+        "source_id": "oif-study-permit-extension",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "oif-student-residence-en",
+          "njt-act-xc-2023",
+          "sh-faq",
+          "sh-application-guide-2026-27",
+          "elte-international-guide-2026-27"
+        ]
+      },
+      {
+        "id": "g07",
+        "source_id": "eu-portal-student-hungary",
+        "hit_at_5": true,
+        "top_source_ids": [
+          "elte-academic-regulations-en",
+          "eu-portal-student-hungary",
+          "oif-student-residence-en",
+          "elte-international-guide-2026-27",
+          "elte-international-guide-2026-27"
+        ]
+      },
+      {
+        "id": "g08",
+        "source_id": "oif-employer-obligations",
+        "hit_at_5": false,
+        "top_source_ids": [
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu",
+          "bme-tvsz-hu"
+        ]
+      }
+    ]
+  }
+}

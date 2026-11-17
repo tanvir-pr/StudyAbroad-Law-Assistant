@@ -2,7 +2,7 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 4 of 22 splits the saved texts into fixed chunks, embeds them with BAAI/bge-m3, and stores a FAISS index. The golden set is 40 questions. The assistant does not write an answer yet.
+Day 10 / v0.2 freezes the golden set at 150 questions, re-runs the RAGAS-aligned table, and files 30 categorized weak examples.
 
 ## Scope locked on 1 November 2026
 
@@ -37,7 +37,7 @@ Raw files land in `data/raw/`, which stays out of git. Each saved page gets a `.
 python -m ingestion.parse_pdf
 ```
 
-The evaluation set is [eval/golden_set.jsonl](eval/golden_set.jsonl): 40 questions with reference answers and source URLs. It is described in [eval/DATA_CARD.md](eval/DATA_CARD.md). Do not add those questions to the fine-tuning set. A URL that `robots.txt` disallows, or whose certificate does not verify, is recorded in `manifest.json` and not downloaded.
+The evaluation set is [eval/golden_set.jsonl](eval/golden_set.jsonl): **150 frozen** questions (see [eval/GOLDEN_FREEZE.md](eval/GOLDEN_FREEZE.md)). Described in [eval/DATA_CARD.md](eval/DATA_CARD.md). Do not add those questions to the fine-tuning set. A URL that `robots.txt` disallows, or whose certificate does not verify, is recorded in `manifest.json` and not downloaded.
 
 ## Build the FAISS index
 
@@ -52,3 +52,76 @@ Search the saved index without rebuilding it:
 ```bash
 python -m rag.index_faiss --query "how many hours a week may a student work"
 ```
+
+## Ask one question
+
+```bash
+python -m rag.ask "How many hours a week may a student work during the study period?"
+```
+
+Uses prompt `rag/prompts/v1.txt`, retrieves top-5 chunks, and answers with `Qwen/Qwen2.5-1.5B-Instruct`. On CUDA the model loads in 4-bit; on CPU it loads full weights. A reply without a citation that matches a retrieved source is turned into a refuse. For a smoke test without downloading Qwen:
+
+```bash
+python -m rag.ask --echo "How many hours a week may a student work during the study period?"
+```
+
+## Compare chunk strategies
+
+```bash
+python -m eval.chunk_recall
+```
+
+Builds temporary indexes for `fixed`, `recursive`, and `section_aware`, then writes span coverage and Recall@1/3/5 to [eval/results/chunking_recall.md](eval/results/chunking_recall.md). Default embedder is a fast hash embedder so the bake-off finishes on CPU. For the same comparison with `BAAI/bge-m3`:
+
+```bash
+python -m eval.chunk_recall --embedder bge-m3
+```
+
+## Hybrid retrieve
+
+`python -m rag.ask` now defaults to hybrid (FAISS + BM25, RRF). Optional filters:
+
+```bash
+python -m rag.ask --echo --institution OIF --country HU "How many hours may a student work?"
+python -m rag.ask --echo --mode dense "How many hours may a student work?"
+```
+
+Compare dense / BM25 / hybrid on the golden set:
+
+```bash
+python -m eval.hybrid_recall
+```
+
+Scores land in [eval/results/hybrid_recall.md](eval/results/hybrid_recall.md).
+
+## FAISS vs Chroma and reranking
+
+Copy the FAISS vectors into a Chroma store (no re-embedding):
+
+```bash
+python -m rag.index_chroma
+python -m eval.faiss_vs_chroma
+```
+
+Hybrid retrieve now reranks the top candidates with `BAAI/bge-reranker-v2-m3` by default:
+
+```bash
+python -m eval.rerank_recall
+python -m rag.ask --echo --no-rerank "How many hours may a student work?"
+```
+
+## RAGAS-aligned scores
+
+```bash
+python -m eval.ragas_eval
+python -m eval.ragas_eval --generator qwen
+```
+
+Default table uses extractive quoted answers on CPU:
+
+```bash
+python -m eval.ragas_eval --tag v0.2
+python -m eval.error_categories --input eval/results/ragas_v0.2.json
+```
+
+Chart-ready numbers from days 6–9 live in [eval/results/charts_v0.2.md](eval/results/charts_v0.2.md).

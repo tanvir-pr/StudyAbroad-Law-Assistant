@@ -1,6 +1,6 @@
 # Data card — Hungary student-rules corpus
 
-Draft for day 4. This is not legal advice. The files under `data/raw/` and `data/index/` are local copies and a local FAISS index. They are not committed.
+Draft for day 10 / v0.2. This is not legal advice. The golden set is frozen at 150 questions (`eval/GOLDEN_FREEZE.md`). Files under `data/raw/` and `data/index/` are local. Chunking is locked to fixed 1200/200. See `eval/results/` for retrieval charts, `ragas_v0.2.md`, and `error_categories_v0.2.md`.
 
 ## What this is
 
@@ -21,7 +21,14 @@ Hungary only: student residence permits, work during studies, Stipendium Hungari
 | Not saved | 1 |
 | HTML pages with extracted text | 15 |
 | PDFs with extracted text | 11 |
-| Golden questions | 40 |
+| Golden questions | 150 (frozen v0.2) |
+| Day-10 quality table | `eval/results/ragas_v0.2.md` |
+| Error categories | `eval/results/error_categories_v0.2.md` (30 examples) |
+| Chart numbers | `eval/results/charts_v0.2.md` |
+| Dense backends compared | FAISS IndexFlatIP, Chroma (copied vectors) |
+| Reranker | BAAI/bge-reranker-v2-m3 |
+| Chunk strategies compared | fixed, recursive, section_aware |
+| Day-6 best Recall@5 (hash bake-off) | fixed (0.367); span coverage 0.933 for all three |
 | Chunk size / overlap | 1,200 / 200 characters |
 | Embedding model | BAAI/bge-m3 |
 | Dense index | FAISS IndexFlatIP, under `data/index/` |

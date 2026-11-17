@@ -10,7 +10,7 @@ import numpy as np
 import yaml
 
 from ingestion.sources import ROOT
-from rag.chunking import fixed_chunks
+from rag.chunking import chunk_text
 
 INDEX_NAME = "chunks.faiss"
 META_NAME = "chunks.jsonl"
@@ -49,11 +49,18 @@ def load_corpus(raw_dir: Path | None = None) -> list[dict]:
     return documents
 
 
-def build_index(documents: list[dict], embedder, index_dir: Path, size: int, overlap: int) -> int:
+def build_index(
+    documents: list[dict],
+    embedder,
+    index_dir: Path,
+    size: int,
+    overlap: int,
+    strategy: str = "fixed",
+) -> int:
     rows: list[dict] = []
     texts: list[str] = []
     for document in documents:
-        for piece in fixed_chunks(document["text"], size, overlap):
+        for piece in chunk_text(document["text"], strategy, size, overlap):
             rows.append(
                 {
                     "source_id": document["source_id"],
@@ -64,6 +71,7 @@ def build_index(documents: list[dict], embedder, index_dir: Path, size: int, ove
                     "language": document["language"],
                     "last_updated": document["last_updated"],
                     "text": piece,
+                    "strategy": strategy,
                 }
             )
             texts.append(piece)
@@ -141,14 +149,18 @@ def main() -> None:
             print()
         return
     documents = load_corpus()
+    strategy = config["chunking"].get("strategy", "fixed")
     count = build_index(
         documents,
         embedder,
         index_dir,
         size=config["chunking"]["size"],
         overlap=config["chunking"]["overlap"],
+        strategy=strategy,
     )
-    print(f"indexed {count} chunks from {len(documents)} documents into {index_dir}")
+    print(
+        f"indexed {count} chunks ({strategy}) from {len(documents)} documents into {index_dir}"
+    )
 
 
 if __name__ == "__main__":

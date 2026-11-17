@@ -11,3 +11,14 @@ numpy>=1.26.0
 faiss-cpu>=1.9.0
 # Stay below 4 so this does not pull huggingface-hub 2, which breaks Gradio and LangChain already installed here.
 sentence-transformers>=3.3.1,<4
+# Day 5: Qwen2.5-1.5B-Instruct generation. 4-bit needs CUDA + bitsandbytes; CPU uses full weights.
+transformers>=4.44.0,<5
+accelerate>=0.34.0
+bitsandbytes>=0.44.0; platform_system != "Windows"
+# Day 7: BM25 sparse retrieval for hybrid search.
+rank-bm25>=0.2.2
+# Day 8: Chroma dense store comparison (vectors copied from FAISS).
+chromadb>=0.5.0
+# Keep these below the kubernetes/chromadb upper pins so Streamlit/botocore stay importable.
+python-dateutil>=2.8.2,<3
+protobuf>=4.25.8,<7

@@ -1,0 +1,2566 @@
+{
+  "framework": "RAGAS-aligned local metrics",
+  "generator": "extractive-quote",
+  "reranker": "OverlapReranker",
+  "embedder": "BAAI/bge-m3",
+  "summary": {
+    "context_precision": 0.3653,
+    "context_recall": 0.7933,
+    "faithfulness": 0.9777,
+    "answer_relevancy": 0.4745,
+    "n_questions": 150,
+    "refuse_rate": 0.0
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5257,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-operational-regulations",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g02",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.474,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-regulations-index",
+        "oif-student-residence-en",
+        "sh-regulations-index",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g03",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6566,
+      "answer": "during the validity period of your residence permit for the [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-study-permit-extension",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g04",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.708,
+      "answer": "students with a residence permit issued for the purpose of studies can still apply [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "oif-higher-education-institutions",
+        "elte-international-guide-2026-27",
+        "oif-higher-education-institutions",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g05",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4076,
+      "answer": "mobility residence permit or a student mobility certificate shall not be granted a residence permit for the purpose of family reunification. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "oif-enter-hungary-student-manual"
+      ]
+    },
+    {
+      "id": "g06",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 0.9643,
+      "answer_relevancy": 0.4225,
+      "answer": "he requirement of the habitual residency principle. How do I get my scholarship allowances? The monthly stipend and accommodation contribution must be arranged between the scholarship holder and the university. Contact your institutional SH coordinator . What are the minimal cred [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "oif-study-permit-extension",
+        "elte-international-guide-2026-27",
+        "sh-regulations-index",
+        "bme-code-of-studies-en"
+      ]
+    },
+    {
+      "id": "g07",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3921,
+      "answer": "mobility residence permit or a student mobility certificate shall not be granted a residence permit for the purpose of family reunification. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "sh-call-phd-2026-27",
+        "eu-portal-student-hungary",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g08",
+      "source_id": "oif-employer-obligations",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4692,
+      "answer": "ons of the employer and host organization regarding third-country nationals [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations"
+      ]
+    },
+    {
+      "id": "g09",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4921,
+      "answer": "during the study period . Otherwise their scholarship holder status [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g10",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4325,
+      "answer": "ximum of ninety days a year outside the teaching period. [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "sh-faq",
+        "sh-operational-regulations",
+        "sh-regulations-index",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g11",
+      "source_id": "sh-general-terms",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4004,
+      "answer": "e for scholarship holders). [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-general-terms"
+      ]
+    },
+    {
+      "id": "g12",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7207,
+      "answer": "Visa and residence permit - John von Neumann University [nje-visa-residence](https://nje.hu/en/practical-information/visa-and-residence-permit). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-visa-residence",
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-regulations-index"
+      ]
+    },
+    {
+      "id": "g13",
+      "source_id": "bme-code-of-studies-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4879,
+      "answer": "ed to exist during the partial studies as well AND its translation [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "bme-code-of-studies-en",
+        "elte-academic-regulations-en",
+        "sh-call-ba-ma-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g14",
+      "source_id": "elte-academic-regulations-en",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3959,
+      "answer": "first semester of the 2016/2017 academic year, and thereafter in an ascending [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g15",
+      "source_id": "eurlex-directive-2016-801",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.4529,
+      "answer": "be able to check, after a minimum time period established in this Directive, if they have a genuine chance of being employed or of launching a business. This possibility is without prejudice to other reporting obligations provided for in national law for other purposes. The autho [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801"
+      ]
+    },
+    {
+      "id": "g16",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.534,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "sh-faq"
+      ]
+    },
+    {
+      "id": "g17",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5498,
+      "answer": "icate of admission or a student status certificate. [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "oif-higher-education-institutions",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g18",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5844,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "sh-call-phd-2026-27",
+        "elte-international-guide-2026-27",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g19",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4309,
+      "answer": "ng its holder to receive a residence permit, of which the competent Hungarian consulate shall be notified by the regional directorate. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g20",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5736,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-enter-hungary-student-manual"
+      ]
+    },
+    {
+      "id": "g21",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5415,
+      "answer": "visa / residence permit here. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g22",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5187,
+      "answer": "visa / residence permit here. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g23",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5224,
+      "answer": "ion establishment on the applicant’s academic advancement [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g24",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6033,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "eu-portal-student-hungary",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g25",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4941,
+      "answer": "ght upload the [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "oif-study-permit-extension",
+        "oif-enter-hungary-student-manual",
+        "oif-student-residence-en",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g26",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5323,
+      "answer": "need to request an extension on your scholarship status due to the change of study programme, however an extension is not guaranteed. If the extension request is granted, scholarship holders will not receive a scholarship or housing allowance. (This rule does not apply to student [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g27",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7403,
+      "answer": "also not eligible to receive the Stipendium Hungaricum scholarship if they have another [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-general-terms",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g28",
+      "source_id": "sh-general-terms",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2865,
+      "answer": "tónak [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-general-terms"
+      ]
+    },
+    {
+      "id": "g29",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4344,
+      "answer": "- are now re-applying for the programme for any cycle s of education while they still [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g30",
+      "source_id": "sh-operational-regulations",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5522,
+      "answer": "also not eligible to receive the Stipendium Hungaricum scholarship if they have another [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-operational-regulations"
+      ]
+    },
+    {
+      "id": "g31",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4432,
+      "answer": "for academic and examination [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "nje-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-regulations-index"
+      ]
+    },
+    {
+      "id": "g32",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.278,
+      "answer": "ence in the country after your arrival, please inform the International Office. [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "nje-study-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g33",
+      "source_id": "eurlex-directive-2016-801",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.503,
+      "answer": "ce permit or a student mobility certificate [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary",
+        "eurlex-directive-2016-801"
+      ]
+    },
+    {
+      "id": "g34",
+      "source_id": "njt-act-xc-2023",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5533,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-operational-regulations",
+        "elte-academic-regulations-en",
+        "sh-faq",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g35",
+      "source_id": "njt-act-xc-2023",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4332,
+      "answer": "visa / residence permit here. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "oif-student-residence-en",
+        "oif-enter-hungary-student-manual",
+        "oif-higher-education-institutions",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g36",
+      "source_id": "oif-enter-hungary-student-manual",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2801,
+      "answer": "nying persons. Please note that under the current legislation, a third-country national holding [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-enter-hungary-student-manual",
+        "oif-enter-hungary-student-manual",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g37",
+      "source_id": "elte-international-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.544,
+      "answer": "r’s programme, which involves obtaining 60-120 credits. The length [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-regulations-index",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g38",
+      "source_id": "elte-international-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5706,
+      "answer": "r’s programme, which involves obtaining 60-120 credits. The length [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-regulations-index",
+        "sh-application-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g39",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.511,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "eu-portal-student-hungary",
+        "eu-portal-student-hungary",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g40",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4896,
+      "answer": "ng its holder to receive a residence permit, of which the competent Hungarian consulate shall be notified by the regional directorate. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g41",
+      "source_id": "oif-student-residence-hu",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3233,
+      "answer": "s, along with non-EU nationals living in the EU or visiting the EU as tourists, exchange students or for business purposes, anyone legally present in the EU. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "sh-regulations-index",
+        "sh-regulations-index",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g42",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3243,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g43",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5757,
+      "answer": "Visa and residence permit - John von Neumann University [nje-visa-residence](https://nje.hu/en/practical-information/visa-and-residence-permit). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-visa-residence",
+        "nje-regulations-index",
+        "sh-regulations-index",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g44",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 0.9706,
+      "answer_relevancy": 0.4028,
+      "answer": "piry date. You can apply for a residence permit extension online. In addition, you will need to do all the necessary steps to extend or rebook your accommodation online. (Residence permit extension: https://enterhungary.gov.hu/eh/) NEPTUN (Student Information System) Neptun regis [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "bme-code-of-studies-en",
+        "nje-academic-regulations-en",
+        "bme-code-of-studies-en",
+        "nje-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g45",
+      "source_id": "sh-call-phd-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4953,
+      "answer": "Between 2013 and 2019, the ratio of international students studying in Hungarian higher education [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-application-guide-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g46",
+      "source_id": "sh-call-phd-2026-27",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4941,
+      "answer": "ion about the Hungarian doctoral schools, available [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-application-guide-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-application-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g47",
+      "source_id": "sh-call-phd-2026-27",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5426,
+      "answer": "Those former Stipendium Hungaricum Scholarship Holders who were awarded scholarships [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g48",
+      "source_id": "sh-application-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5678,
+      "answer": "thority of the Sending Partner. Each Sending Partner might have different deadlines and requirements for submitting the application materials. There are also Partners that do not require any materials from the applicants. Please find out about these details by contacting the [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-regulations-index",
+        "sh-regulations-index",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g49",
+      "source_id": "bme-code-of-studies-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.4591,
+      "answer": "xtraordinary cases, at the time and place indicated in the timetable. Labor- atory practice, due to its nature, may also be held at a location other than that in- dicated in the timetable provided the students concerned are notified in advance. A lesson at the University is forty [bme-code-of-studies-en](https://vik.bme.hu/document/6459/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "bme-code-of-studies-en",
+        "elte-international-guide-2026-27",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "oif-study-permit-extension"
+      ]
+    },
+    {
+      "id": "g50",
+      "source_id": "elte-academic-regulations-en",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5844,
+      "answer": "a final examination after the termination/expiration of his/her student status. Only the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g51",
+      "source_id": "njt-decree-35-2024",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3714,
+      "answer": "U or multilateral program that includes mobility measures, or an agreement between two or more higher education institutions. [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "nje-academic-regulations-en",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g52",
+      "source_id": "sh-general-terms",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4545,
+      "answer": "ing academic year. A scholarship [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-operational-regulations",
+        "sh-regulations-index",
+        "sh-general-terms",
+        "sh-general-terms"
+      ]
+    },
+    {
+      "id": "g53",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4486,
+      "answer": "ence in the country after your arrival, please inform the International Office. [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-study-guide-2026-27",
+        "nje-visa-residence",
+        "nje-visa-residence",
+        "nje-regulations-index"
+      ]
+    },
+    {
+      "id": "g54",
+      "source_id": "eurlex-directive-2016-801",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5311,
+      "answer": "each other more. When determining the period of validity of the authorisation issued to researchers and students, Member States should take into account the planned mobility to other Member States, in accordance with the provisions on mobility. Researchers and students covered by [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801"
+      ]
+    },
+    {
+      "id": "g55",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5593,
+      "answer": "need to request an extension on your scholarship status due to the change of study programme, however an extension is not guaranteed. If the extension request is granted, scholarship holders will not receive a scholarship or housing allowance. (This rule does not apply to student [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-regulations-index",
+        "nje-study-guide-2026-27",
+        "sh-regulations-index",
+        "sh-general-terms"
+      ]
+    },
+    {
+      "id": "g56",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4436,
+      "answer": "ion establishment on the applicant’s academic advancement [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "oif-higher-education-institutions",
+        "oif-study-permit-extension"
+      ]
+    },
+    {
+      "id": "g57",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 0.9697,
+      "answer_relevancy": 0.5819,
+      "answer": "estee. If there is such a vis major case, some kind of proof (i.e. a medical certificate) must be submitted to the Directorate for Study in Hungary of Tempus Public Foundation, together with a written and signed request. The host higher education institution and the Sending Partn [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-general-terms",
+        "sh-faq"
+      ]
+    },
+    {
+      "id": "g58",
+      "source_id": "oif-employer-obligations",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5992,
+      "answer": "ons of the employer and host organization regarding third-country nationals [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g59",
+      "source_id": "elte-international-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4476,
+      "answer": "ungary, an unforgettable experience designed especially for our new international students. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-regulations-index",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g60",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.532,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g61",
+      "source_id": "sh-regulations-index",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 0.9697,
+      "answer_relevancy": 0.5878,
+      "answer": "estee. If there is such a vis major case, some kind of proof (i.e. a medical certificate) must be submitted to the Directorate for Study in Hungary of Tempus Public Foundation, together with a written and signed request. The host higher education institution and the Sending Partn [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g62",
+      "source_id": "sh-regulations-index",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2799,
+      "answer": "e cases described in the [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "elte-academic-regulations-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g63",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5366,
+      "answer": "of Johm von Neumann University regarding [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "nje-regulations-index",
+        "nje-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g64",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4729,
+      "answer": "allowing students to take the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g65",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4098,
+      "answer": "en academic term. [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "bme-code-of-studies-en"
+      ]
+    },
+    {
+      "id": "g66",
+      "source_id": "elte-regulations-index",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3479,
+      "answer": "ages on the basis of which grants are paid, are to be allocated to the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g67",
+      "source_id": "bme-tvsz-hu",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2889,
+      "answer": "her the following [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "elte-regulations-index",
+        "elte-regulations-index",
+        "bme-code-of-studies-en",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g68",
+      "source_id": "oif-enter-hungary-student-manual",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.507,
+      "answer": "ee years, which can be extended if appropriate by one or at most three years. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-enter-hungary-student-manual",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-study-permit-extension"
+      ]
+    },
+    {
+      "id": "g69",
+      "source_id": "njt-decree-35-2024",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4833,
+      "answer": "ion establishment on the applicant’s academic advancement [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-student-residence-en",
+        "eurlex-directive-2016-801",
+        "oif-higher-education-institutions",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g70",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3676,
+      "answer": "a Diaspora Scholarship holder student, turn to the Diaspora Mentoring Program: [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g71",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5354,
+      "answer": "ion to Tempus Public Foundation [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-application-guide-2026-27",
+        "sh-regulations-index",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g72",
+      "source_id": "sh-operational-regulations",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5203,
+      "answer": "also not eligible to receive the Stipendium Hungaricum scholarship if they have another [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "sh-call-phd-2026-27",
+        "sh-operational-regulations",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g73",
+      "source_id": "eurlex-directive-2016-801",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.594,
+      "answer": "ferred to in paragraph 1, researchers may, in addition to research activities, teach and students may, in addition to their studies, work, in one or several second Member States in accordance with the conditions laid down in Articles 23 and 24 respectively. [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801"
+      ]
+    },
+    {
+      "id": "g74",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5215,
+      "answer": "mobility residence permit or a student mobility certificate shall not be granted a residence permit for the purpose of family reunification. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g75",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5189,
+      "answer": "of the student, pupil: [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g76",
+      "source_id": "elte-international-guide-2026-27",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.349,
+      "answer": "t the internationalisation [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g77",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4556,
+      "answer": "ievement is evaluated with a grade (1-fail, 2- [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "sh-application-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "nje-study-guide-2026-27",
+        "sh-application-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g78",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5472,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "oif-higher-education-institutions",
+        "nje-study-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g79",
+      "source_id": "oif-employer-obligations",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6661,
+      "answer": "ons of the employer and host organization regarding third-country nationals [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations"
+      ]
+    },
+    {
+      "id": "g80",
+      "source_id": "sh-general-terms",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3572,
+      "answer": "“The institute may terminate the status of the scholarship holder by a unilateral declaration after consulting. [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index",
+        "sh-general-terms",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g81",
+      "source_id": "bme-code-of-studies-en",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.6677,
+      "answer": "xtraordinary cases, at the time and place indicated in the timetable. Labor- atory practice, due to its nature, may also be held at a location other than that in- dicated in the timetable provided the students concerned are notified in advance. A lesson at the University is forty [bme-code-of-studies-en](https://vik.bme.hu/document/6459/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "bme-code-of-studies-en",
+        "elte-academic-regulations-en",
+        "bme-code-of-studies-en",
+        "elte-academic-regulations-en",
+        "bme-code-of-studies-en"
+      ]
+    },
+    {
+      "id": "g82",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5881,
+      "answer": "ee years, which can be extended if appropriate by one or at most three years. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "nje-study-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g83",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4954,
+      "answer": "need to request an extension on your scholarship status due to the change of study programme, however an extension is not guaranteed. If the extension request is granted, scholarship holders will not receive a scholarship or housing allowance. (This rule does not apply to student [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-general-terms",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g84",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5302,
+      "answer": "mobility residence permit or a student mobility certificate shall not be granted a residence permit for the purpose of family reunification. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g85",
+      "source_id": "elte-academic-regulations-en",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3469,
+      "answer": "........... 307 [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g86",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3033,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-study-permit-extension",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g87",
+      "source_id": "sh-call-phd-2026-27",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 0.9697,
+      "answer_relevancy": 0.5859,
+      "answer": "estee. If there is such a vis major case, some kind of proof (i.e. a medical certificate) must be submitted to the Directorate for Study in Hungary of Tempus Public Foundation, together with a written and signed request. The host higher education institution and the Sending Partn [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "sh-faq",
+        "sh-call-ba-ma-2026-27",
+        "sh-general-terms",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g88",
+      "source_id": "njt-act-xc-2023",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.67,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "oif-higher-education-institutions",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "sh-faq"
+      ]
+    },
+    {
+      "id": "g89",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3695,
+      "answer": "Supervisor and the student. [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "bme-code-of-studies-en",
+        "elte-academic-regulations-en",
+        "nje-academic-regulations-en",
+        "bme-code-of-studies-en"
+      ]
+    },
+    {
+      "id": "g90",
+      "source_id": "sh-application-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5248,
+      "answer": "thority of the Sending Partner. Each Sending Partner might have different deadlines and requirements for submitting the application materials. There are also Partners that do not require any materials from the applicants. Please find out about these details by contacting the [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index",
+        "sh-call-phd-2026-27",
+        "sh-application-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g91",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6523,
+      "answer": "idence permit application before you come to Hungary. The residence [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-enter-hungary-student-manual",
+        "sh-call-ba-ma-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g92",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.292,
+      "answer": "tution, we recommend that together with a bank balance statement, you also submit a transaction statement, which credibly attests to your right to dispose of the amount in question. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g93",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4259,
+      "answer": "student, [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "sh-regulations-index",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g94",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4532,
+      "answer": "ng its holder to receive a residence permit, of which the competent Hungarian consulate shall be notified by the regional directorate. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-higher-education-institutions",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g95",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.536,
+      "answer": "rasmus Student Network ELTE) or Stipendium Hungaricum Mentor Network (SHMN)) will help [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "elte-international-guide-2026-27",
+        "sh-application-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-application-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g96",
+      "source_id": "nje-visa-residence",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.485,
+      "answer": "ver country and have not yet applied for a residence permit, you [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-regulations-index"
+      ]
+    },
+    {
+      "id": "g97",
+      "source_id": "nje-regulations-index",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6897,
+      "answer": "Regulation and documents - John von Neumann University [nje-regulations-index](https://nje.hu/en/regulation-and-documents). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-regulations-index",
+        "nje-regulations-index",
+        "nje-academic-regulations-en",
+        "nje-visa-residence",
+        "nje-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g98",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3841,
+      "answer": "that does not exceed the training period. [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-general-terms",
+        "elte-academic-regulations-en",
+        "sh-general-terms"
+      ]
+    },
+    {
+      "id": "g99",
+      "source_id": "sh-application-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.718,
+      "answer": "Apply – Stipendium Hungaricum Scholarship [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-application-guide-2026-27",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g100",
+      "source_id": "eurlex-directive-2016-801",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.4335,
+      "answer": "be able to check, after a minimum time period established in this Directive, if they have a genuine chance of being employed or of launching a business. This possibility is without prejudice to other reporting obligations provided for in national law for other purposes. The autho [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801"
+      ]
+    },
+    {
+      "id": "g101",
+      "source_id": "njt-act-xc-2023",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6383,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-study-permit-extension",
+        "sh-operational-regulations",
+        "sh-faq",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g102",
+      "source_id": "njt-decree-35-2024",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4934,
+      "answer": "fices regarding residence permits can be brought within 8 days of delivery to the immigration authority, or to the Hungarian diplomatic or consular mission where the application was submitted. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g103",
+      "source_id": "elte-academic-regulations-en",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4866,
+      "answer": "erning the Faculty of Science of the Academic Regulations for Students’ Special Section of Volume 2 of the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g104",
+      "source_id": "elte-international-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3623,
+      "answer": "applicant, [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-academic-regulations-en",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g105",
+      "source_id": "bme-code-of-studies-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5628,
+      "answer": "studies in English or other foreign languages. Please see [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "bme-code-of-studies-en",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g106",
+      "source_id": "bme-tvsz-hu",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2813,
+      "answer": "es to whom the original decision was delivered concerning the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-academic-regulations-en",
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en"
+      ]
+    },
+    {
+      "id": "g107",
+      "source_id": "sh-general-terms",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4719,
+      "answer": "ing academic year. A scholarship [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-call-phd-2026-27",
+        "sh-general-terms",
+        "sh-general-terms"
+      ]
+    },
+    {
+      "id": "g108",
+      "source_id": "sh-operational-regulations",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5123,
+      "answer": "rogramme, hereby establishes the following operational regulations [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "sh-operational-regulations",
+        "sh-faq",
+        "sh-call-ba-ma-2026-27",
+        "sh-operational-regulations"
+      ]
+    },
+    {
+      "id": "g109",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.4089,
+      "answer": "p [oif-enter-hungary-student-manual](https://www.oif.gov.hu/factsheets/eh-manual-for-case-uploading-student). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-enter-hungary-student-manual",
+        "elte-international-guide-2026-27",
+        "sh-regulations-index",
+        "oif-student-residence-en",
+        "sh-application-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g110",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5208,
+      "answer": "For higher education institutions [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "oif-higher-education-institutions",
+        "oif-higher-education-institutions"
+      ]
+    },
+    {
+      "id": "g111",
+      "source_id": "oif-employer-obligations",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5612,
+      "answer": "he employer or host organisation submitted the application [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations"
+      ]
+    },
+    {
+      "id": "g112",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4259,
+      "answer": "red to in paragraphs 1 and 2, the period of validity of the authorisation shall not exceed the period of validity of the travel document. [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "eurlex-directive-2016-801",
+        "eu-portal-student-hungary",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g113",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.3254,
+      "answer": "en the [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g114",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2744,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g115",
+      "source_id": "sh-call-phd-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3704,
+      "answer": "ly continue with the second phase of their studies [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g116",
+      "source_id": "sh-regulations-index",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4656,
+      "answer": "credits on average during the last two semesters with an active [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "sh-call-phd-2026-27",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g117",
+      "source_id": "oif-enter-hungary-student-manual",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3207,
+      "answer": "on the website. [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-enter-hungary-student-manual",
+        "oif-enter-hungary-student-manual",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "sh-faq"
+      ]
+    },
+    {
+      "id": "g118",
+      "source_id": "elte-regulations-index",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5308,
+      "answer": "Effective date: 1 September 2026. [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-regulations-index",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g119",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4632,
+      "answer": "during the study period . Otherwise their scholarship holder status [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-faq",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g120",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3885,
+      "answer": "ollect the respective residence permit. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g121",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4269,
+      "answer": "ght upload the [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "oif-study-permit-extension",
+        "sh-call-ba-ma-2026-27",
+        "elte-international-guide-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g122",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.3042,
+      "answer": "ys [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-study-permit-extension",
+        "oif-study-permit-extension",
+        "oif-enter-hungary-student-manual",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g123",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4855,
+      "answer": "ght upload the [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-study-permit-extension",
+        "elte-international-guide-2026-27",
+        "oif-study-permit-extension",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g124",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3664,
+      "answer": "It means that the date of the issue on the document cannot be earlier than 1 [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g125",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5102,
+      "answer": "ation to the Sending Partners [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-application-guide-2026-27",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g126",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3328,
+      "answer": "4. Institutions and partner organisations will be granted access rights by the Public Foundation [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-call-phd-2026-27",
+        "sh-operational-regulations",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g127",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5298,
+      "answer": "of Johm von Neumann University regarding [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "nje-academic-regulations-en",
+        "nje-academic-regulations-en",
+        "nje-study-guide-2026-27",
+        "nje-study-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g128",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4351,
+      "answer": "emester the week before the [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "nje-academic-regulations-en",
+        "elte-international-guide-2026-27",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g129",
+      "source_id": "nje-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3844,
+      "answer": "tion 26/2025. (VIII.28.) Effective from 08.28.2025. [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g130",
+      "source_id": "eurlex-directive-2016-801",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5627,
+      "answer": "er States shall, upon an application by the researcher or the student, issue a residence permit to that third-country national in accordance with Regulation (EC) No 1030/2002 where the conditions laid down in points (a), (c), (d) and (e) of Article 7(1), Article 7(6) and, where a [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801",
+        "eurlex-directive-2016-801"
+      ]
+    },
+    {
+      "id": "g131",
+      "source_id": "oif-higher-education-institutions",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6765,
+      "answer": "mobility residence permit or a student mobility certificate shall not be granted a residence permit for the purpose of family reunification. [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+      "retrieved_source_ids": [
+        "eu-portal-student-hungary",
+        "oif-higher-education-institutions",
+        "oif-higher-education-institutions",
+        "eu-portal-student-hungary",
+        "oif-student-residence-en"
+      ]
+    },
+    {
+      "id": "g132",
+      "source_id": "oif-student-residence-hu",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4939,
+      "answer": "need to request an extension on your scholarship status due to the change of study programme, however an extension is not guaranteed. If the extension request is granted, scholarship holders will not receive a scholarship or housing allowance. (This rule does not apply to student [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "oif-student-residence-en",
+        "oif-higher-education-institutions",
+        "sh-regulations-index"
+      ]
+    },
+    {
+      "id": "g133",
+      "source_id": "oif-student-residence-hu",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3562,
+      "answer": "rdance with the effective legal regulations, pursuant to Section 54 (8) of Act XC of 2023 on the General Rules for the Entry and Residence of Third-Country Nationals, third-country nationals holding a residence permit for the purpose of studies or student mobility, or a student m [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-faq",
+        "sh-regulations-index",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g134",
+      "source_id": "sh-faq",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4115,
+      "answer": "ntract with the institution must be arranged between the scholarship holder and the university. Contact your [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-regulations-index",
+        "sh-general-terms",
+        "sh-operational-regulations",
+        "sh-faq",
+        "sh-call-ba-ma-2026-27"
+      ]
+    },
+    {
+      "id": "g135",
+      "source_id": "sh-general-terms",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3007,
+      "answer": "he cases set out in the Operational Regulations and the [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-general-terms",
+        "sh-general-terms",
+        "sh-operational-regulations",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g136",
+      "source_id": "elte-international-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5429,
+      "answer": "rasmus Student Network ELTE) or Stipendium Hungaricum Mentor Network (SHMN)) will help [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-regulations-index",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g137",
+      "source_id": "bme-code-of-studies-en",
+      "refused": false,
+      "context_precision": 0.6,
+      "context_recall": 1.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.5339,
+      "answer": "xtraordinary cases, at the time and place indicated in the timetable. Labor- atory practice, due to its nature, may also be held at a location other than that in- dicated in the timetable provided the students concerned are notified in advance. A lesson at the University is forty [bme-code-of-studies-en](https://vik.bme.hu/document/6459/original/BME_Code_of_Studies_2016_mod(202402)_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "bme-code-of-studies-en",
+        "bme-code-of-studies-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "bme-code-of-studies-en"
+      ]
+    },
+    {
+      "id": "g138",
+      "source_id": "eu-portal-student-hungary",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4387,
+      "answer": "certificate issued by the educational institution [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "sh-call-phd-2026-27",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary"
+      ]
+    },
+    {
+      "id": "g139",
+      "source_id": "nje-study-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2944,
+      "answer": "tured; therefore, we strongly [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-study-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "elte-international-guide-2026-27",
+        "eu-portal-student-hungary",
+        "elte-international-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g140",
+      "source_id": "sh-call-phd-2026-27",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6188,
+      "answer": "for Application is for bachelor’s, master’s, one -tier master’s, non-degree [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "bme-code-of-studies-en",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g141",
+      "source_id": "sh-application-guide-2026-27",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3398,
+      "answer": "B , Republic of Srpska and from the Kurdish [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-application-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g142",
+      "source_id": "njt-decree-35-2024",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3496,
+      "answer": "ers in the [nje-academic-regulations-en](https://nje.hu/storage/content/696/files/III%20TVSZ_ACADEMIC%20AND%20EXAMINATION%20REGULATIONS%206.version%20Honlapra.pdf?r=d2ca8332388447992351f5c94c91b80f). Not legal advice.",
+      "retrieved_source_ids": [
+        "nje-academic-regulations-en",
+        "oif-higher-education-institutions",
+        "oif-student-residence-en",
+        "elte-international-guide-2026-27",
+        "nje-study-guide-2026-27"
+      ]
+    },
+    {
+      "id": "g143",
+      "source_id": "oif-employer-obligations",
+      "refused": false,
+      "context_precision": 1.0,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5278,
+      "answer": "ons of the employer and host organization regarding third-country nationals [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations",
+        "oif-employer-obligations"
+      ]
+    },
+    {
+      "id": "g144",
+      "source_id": "elte-academic-regulations-en",
+      "refused": false,
+      "context_precision": 0.8,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4117,
+      "answer": "on to the cases specified under (1) the assent of the University’s Students’ union [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-regulations-index",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g145",
+      "source_id": "elte-regulations-index",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5089,
+      "answer": "bout ELTE [elte-regulations-index](https://www.elte.hu/en/regulations). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-regulations-index",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en",
+        "elte-academic-regulations-en"
+      ]
+    },
+    {
+      "id": "g146",
+      "source_id": "sh-operational-regulations",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3288,
+      "answer": "ement of the [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "sh-operational-regulations",
+        "elte-international-guide-2026-27",
+        "sh-call-ba-ma-2026-27",
+        "sh-call-phd-2026-27"
+      ]
+    },
+    {
+      "id": "g147",
+      "source_id": "oif-study-permit-extension",
+      "refused": false,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4419,
+      "answer": "ase make sure completion of the attachments/enclosures is in full and check all documents before submission, supporting the soonest possible processing and examination of the application. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "oif-study-permit-extension",
+        "oif-student-residence-en",
+        "oif-student-residence-en",
+        "oif-enter-hungary-student-manual"
+      ]
+    },
+    {
+      "id": "g148",
+      "source_id": "bme-tvsz-hu",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3488,
+      "answer": "cluding [sh-operational-regulations](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf). Not legal advice.",
+      "retrieved_source_ids": [
+        "sh-operational-regulations",
+        "sh-application-guide-2026-27",
+        "bme-code-of-studies-en",
+        "sh-regulations-index",
+        "elte-regulations-index"
+      ]
+    },
+    {
+      "id": "g149",
+      "source_id": "oif-student-residence-en",
+      "refused": false,
+      "context_precision": 0.4,
+      "context_recall": 1.0,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4064,
+      "answer": "ng its holder to receive a residence permit, of which the competent Hungarian consulate shall be notified by the regional directorate. [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+      "retrieved_source_ids": [
+        "oif-student-residence-en",
+        "eu-portal-student-hungary",
+        "eurlex-directive-2016-801",
+        "oif-student-residence-en",
+        "oif-study-permit-extension"
+      ]
+    },
+    {
+      "id": "g150",
+      "source_id": "njt-act-xc-2023",
+      "refused": false,
+      "context_precision": 0.0,
+      "context_recall": 0.0,
+      "faithfulness": 0.9688,
+      "answer_relevancy": 0.4595,
+      "answer": "at laid down in Regulation (EC) No 1030/2002 and enter ‘researcher-mobility’ on the residence permit. When the authorisation for long-term mobility is issued to a researcher in the form of a long-stay visa, Member States shall enter ‘researcher-mobility’ under the heading ‘remark [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+      "retrieved_source_ids": [
+        "elte-international-guide-2026-27",
+        "oif-higher-education-institutions",
+        "eurlex-directive-2016-801",
+        "sh-operational-regulations",
+        "oif-higher-education-institutions"
+      ]
+    }
+  ]
+}

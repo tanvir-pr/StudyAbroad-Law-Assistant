@@ -1,0 +1,55 @@
+{
+  "embedder": "BAAI/bge-m3",
+  "index_dir": "E:\\Ai ml all project\\Phase 4 Sequence, NLP and LLM\\Project2\\data\\index",
+  "chunking": {
+    "strategy": "fixed",
+    "size": 1200,
+    "overlap": 200,
+    "locked_on": "2026-11-16",
+    "candidates": [
+      "fixed",
+      "recursive",
+      "section_aware"
+    ]
+  },
+  "hybrid": {
+    "mode": "hybrid",
+    "enabled": true,
+    "rrf_k": 60,
+    "candidate_k": 30,
+    "dense_weight": 1.0,
+    "bm25_weight": 1.0
+  },
+  "modes": [
+    {
+      "mode": "dense",
+      "n_questions": 60,
+      "recall@1": 0.4833,
+      "recall@3": 0.6667,
+      "recall@5": 0.7167,
+      "recall@1_count": 29,
+      "recall@3_count": 40,
+      "recall@5_count": 43
+    },
+    {
+      "mode": "bm25",
+      "n_questions": 60,
+      "recall@1": 0.4833,
+      "recall@3": 0.7,
+      "recall@5": 0.8,
+      "recall@1_count": 29,
+      "recall@3_count": 42,
+      "recall@5_count": 48
+    },
+    {
+      "mode": "hybrid",
+      "n_questions": 60,
+      "recall@1": 0.5667,
+      "recall@3": 0.7167,
+      "recall@5": 0.75,
+      "recall@1_count": 34,
+      "recall@3_count": 43,
+      "recall@5_count": 45
+    }
+  ]
+}

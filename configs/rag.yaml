@@ -1,9 +1,32 @@
-# Day 4 retrieval. Generation stays on day 5.
+# Day 4-8 retrieval + day 5 generation.
 embedding_model: BAAI/bge-m3
 batch_size: 8
 chunking:
+  # Locked after day-6 hash bake-off: fixed had the best Recall@5.
   strategy: fixed
   size: 1200
   overlap: 200
+  locked_on: "2026-11-16"
+  candidates: [fixed, recursive, section_aware]
 index_dir: data/index
+vector_backend: faiss
 top_k: 5
+hybrid:
+  mode: hybrid
+  enabled: true
+  rrf_k: 60
+  candidate_k: 30
+  dense_weight: 1.0
+  bm25_weight: 1.0
+rerank:
+  enabled: true
+  model: BAAI/bge-reranker-v2-m3
+  candidates: 20
+generation:
+  model: Qwen/Qwen2.5-1.5B-Instruct
+  load_in_4bit: true
+  max_new_tokens: 256
+  temperature: 0.1
+  prompt_version: v1
+  # Dense cosine floor only. Hybrid uses RRF scores, so ask() applies this for mode=dense.
+  min_score: 0.25

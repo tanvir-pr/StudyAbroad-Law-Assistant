@@ -1,0 +1,26 @@
+{
+  "embedder": "BAAI/bge-m3",
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "modes": [
+    {
+      "mode": "hybrid",
+      "n_questions": 90,
+      "recall@1": 0.5222,
+      "recall@3": 0.7222,
+      "recall@5": 0.7556,
+      "recall@1_count": 47,
+      "recall@3_count": 65,
+      "recall@5_count": 68
+    },
+    {
+      "mode": "hybrid+rerank",
+      "n_questions": 90,
+      "recall@1": 0.6444,
+      "recall@3": 0.8333,
+      "recall@5": 0.8889,
+      "recall@1_count": 58,
+      "recall@3_count": 75,
+      "recall@5_count": 80
+    }
+  ]
+}
