@@ -2,7 +2,7 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 10 / v0.2 freezes the golden set at 150 questions, re-runs the RAGAS-aligned table, and files 30 categorized weak examples.
+Day 11 adds 30 unanswerable/out-of-scope questions, refusal/hallucination rates, and guardrails (instruction hierarchy, context sanitize, refuse without a matching citation).
 
 ## Scope locked on 1 November 2026
 
@@ -125,3 +125,12 @@ python -m eval.error_categories --input eval/results/ragas_v0.2.json
 ```
 
 Chart-ready numbers from days 6–9 live in [eval/results/charts_v0.2.md](eval/results/charts_v0.2.md).
+
+## Unanswerable / hallucination (day 11)
+
+```bash
+python -m eval.hallucination_eval
+python -m eval.hallucination_eval --mode qwen
+```
+
+Cases: [eval/unanswerable.jsonl](eval/unanswerable.jsonl) (30). Results: [eval/results/hallucination_day11.md](eval/results/hallucination_day11.md). Guards live in `safety/guards.py` and are wired into `rag.ask`.

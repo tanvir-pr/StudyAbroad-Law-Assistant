@@ -11,6 +11,12 @@ from rag.generate import EchoGenerator, GenerationConfig, QwenGenerator
 from rag.index_faiss import load_rag_config
 from rag.prompt import build_messages, ensure_prompt_file
 from rag.retrieve import retrieve
+from safety.guards import (
+    REFUSE_TEXT,
+    context_supports_question,
+    question_must_refuse,
+    sanitize_hits,
+)
 
 CITATION_RE = re.compile(r"\[([a-z0-9][a-z0-9-]{0,80})\]\((https://[^)\s]+)\)")
 REFUSE_PREFIX = "REFUSE:"
@@ -26,6 +32,26 @@ class AskResult:
     prompt_version: str
     model_name: str
     generation_mode: str
+
+
+def _refuse_result(
+    question: str,
+    *,
+    prompt_version: str,
+    model_name: str,
+    generation_mode: str,
+    hits: list[dict] | None = None,
+) -> AskResult:
+    return AskResult(
+        question=question,
+        answer=REFUSE_TEXT,
+        refused=True,
+        citations=[],
+        hits=hits or [],
+        prompt_version=prompt_version,
+        model_name=model_name,
+        generation_mode=generation_mode,
+    )
 
 
 def filter_hits(hits: list[dict], min_score: float) -> list[dict]:
@@ -78,6 +104,13 @@ def ask(
     reranker=None,
     rerank_candidates: int = 20,
 ) -> AskResult:
+    if question_must_refuse(question):
+        return _refuse_result(
+            question,
+            prompt_version=prompt_version,
+            model_name=model_name,
+            generation_mode=generation_mode,
+        )
     hits = retrieve(
         question,
         embedder,
@@ -96,26 +129,22 @@ def ask(
     )
     if retrieve_mode == "dense" and min_score > 0:
         hits = filter_hits(hits, min_score)
-    if not hits:
-        answer = (
-            f"{REFUSE_PREFIX} I cannot cite an official source from the locked allow-list "
-            "for this question. Check OIF, Tempus Public Foundation, or the university."
-        )
-        return AskResult(
-            question=question,
-            answer=answer,
-            refused=True,
-            citations=[],
-            hits=[],
+    hits = sanitize_hits(hits)
+    if not hits or not context_supports_question(question, hits):
+        return _refuse_result(
+            question,
             prompt_version=prompt_version,
             model_name=model_name,
             generation_mode=generation_mode,
+            hits=hits,
         )
     messages = build_messages(question, hits, version=prompt_version)
     answer = generator.generate(messages, max_new_tokens=max_new_tokens, temperature=temperature)
     refused = answer.startswith(REFUSE_PREFIX)
     citations = [] if refused else extract_citations(answer)
-    if refused or not citations or not citations_match_hits(citations, hits):
+    citation_ok = bool(citations) and citations_match_hits(citations, hits)
+    if refused or not citation_ok:
+        # Supported context but weak model output → extractive cite; never invent.
         top = best_hit_for_question(question, hits)
         snippet = " ".join(top["text"].split())[:280]
         answer = (
@@ -123,6 +152,14 @@ def ask(
         )
         citations = extract_citations(answer)
         refused = False
+        if not citations or not citations_match_hits(citations, hits):
+            return _refuse_result(
+                question,
+                prompt_version=prompt_version,
+                model_name=model_name,
+                generation_mode=generation_mode,
+                hits=hits,
+            )
     return AskResult(
         question=question,
         answer=answer,

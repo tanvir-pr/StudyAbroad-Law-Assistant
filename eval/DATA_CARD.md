@@ -1,6 +1,6 @@
 # Data card — Hungary student-rules corpus
 
-Draft for day 10 / v0.2. This is not legal advice. The golden set is frozen at 150 questions (`eval/GOLDEN_FREEZE.md`). Files under `data/raw/` and `data/index/` are local. Chunking is locked to fixed 1200/200. See `eval/results/` for retrieval charts, `ragas_v0.2.md`, and `error_categories_v0.2.md`.
+Draft for day 11. This is not legal advice. The golden set stays frozen at 150 (`eval/GOLDEN_FREEZE.md`). Day 11 adds a separate unanswerable set (`eval/unanswerable.jsonl`, 30) and refusal/hallucination metrics (`eval/results/hallucination_day11.md`). Chunking remains fixed 1200/200.
 
 ## What this is
 
@@ -25,6 +25,8 @@ Hungary only: student residence permits, work during studies, Stipendium Hungari
 | Day-10 quality table | `eval/results/ragas_v0.2.md` |
 | Error categories | `eval/results/error_categories_v0.2.md` (30 examples) |
 | Chart numbers | `eval/results/charts_v0.2.md` |
+| Unanswerable / OOS (day 11) | 30 (`eval/unanswerable.jsonl`) |
+| Hallucination table | `eval/results/hallucination_day11.md` |
 | Dense backends compared | FAISS IndexFlatIP, Chroma (copied vectors) |
 | Reranker | BAAI/bge-reranker-v2-m3 |
 | Chunk strategies compared | fixed, recursive, section_aware |

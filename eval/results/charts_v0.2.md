@@ -56,3 +56,13 @@ Sources: `ragas_day9.md`, `ragas_v0.2.md`.
 ## Error categories (v0.2, 30 examples)
 
 Source: `error_categories_v0.2.md` — main failure mode is retrieving a related but wrong allow-list source (for example OIF EN vs HU, or FAQ vs call PDF).
+
+## Unanswerable / hallucination (day 11)
+
+Source: `hallucination_day11.md` (echo generator)
+
+| Metric | Value |
+| --- | ---: |
+| Cases | 30 |
+| Refuse rate | 1.000 |
+| Hallucination rate | 0.000 |

@@ -14,6 +14,7 @@ def test_prompt_v1_is_versioned_on_disk():
     assert "{question}" in text
     assert "REFUSE:" in text
     assert "Not legal advice" in text
+    assert "Instruction hierarchy" in text
 
 
 def test_format_context_lists_source_url_and_last_updated():
@@ -95,6 +96,35 @@ def test_ask_refuses_when_nothing_is_retrieved(tmp_path: Path):
     )
     assert result.refused
     assert result.answer.startswith("REFUSE:")
+    assert result.citations == []
+
+
+def test_ask_refuses_out_of_scope_germany(tmp_path: Path):
+    documents = [
+        {
+            "source_id": "oif-student-residence-en",
+            "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil",
+            "title": "Work",
+            "country": "HU",
+            "institution": "OIF",
+            "language": "en",
+            "last_updated": None,
+            "text": "Students may work thirty hours weekly during the study period in Hungary.",
+        }
+    ]
+    embedder = HashEmbedder()
+    build_index(documents, embedder, tmp_path, size=200, overlap=20)
+    result = ask(
+        "How do I get a German student visa for TU Munich?",
+        embedder,
+        EchoGenerator(),
+        tmp_path,
+        top_k=1,
+        prompt_version="v1",
+        model_name="echo",
+        generation_mode="echo",
+    )
+    assert result.refused
     assert result.citations == []
 
 
