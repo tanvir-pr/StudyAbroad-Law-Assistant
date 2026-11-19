@@ -50,6 +50,10 @@ def sanitize_text(text: str) -> str:
     return cleaned
 
 
+def text_has_injection(text: str) -> bool:
+    return any(pattern.search(text) for pattern in INJECTION_PATTERNS)
+
+
 def sanitize_hits(hits: list[dict]) -> list[dict]:
     out = []
     for hit in hits:
@@ -57,6 +61,11 @@ def sanitize_hits(hits: list[dict]) -> list[dict]:
         row["text"] = sanitize_text(str(row.get("text", "")))
         out.append(row)
     return out
+
+
+def drop_poisoned_hits(hits: list[dict]) -> list[dict]:
+    """Remove chunks that embed jailbreak / instruction-override text."""
+    return [hit for hit in hits if not text_has_injection(str(hit.get("text", "")))]
 
 
 def question_must_refuse(question: str) -> bool:

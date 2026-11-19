@@ -14,6 +14,7 @@ from rag.retrieve import retrieve
 from safety.guards import (
     REFUSE_TEXT,
     context_supports_question,
+    drop_poisoned_hits,
     question_must_refuse,
     sanitize_hits,
 )
@@ -129,6 +130,7 @@ def ask(
     )
     if retrieve_mode == "dense" and min_score > 0:
         hits = filter_hits(hits, min_score)
+    hits = drop_poisoned_hits(hits)
     hits = sanitize_hits(hits)
     if not hits or not context_supports_question(question, hits):
         return _refuse_result(

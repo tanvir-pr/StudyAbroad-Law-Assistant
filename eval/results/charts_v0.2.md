@@ -66,3 +66,13 @@ Source: `hallucination_day11.md` (echo generator)
 | Cases | 30 |
 | Refuse rate | 1.000 |
 | Hallucination rate | 0.000 |
+
+## Injection suite (day 12 / v0.3)
+
+Source: `injection_v0.3.md`
+
+| Metric | Value |
+| --- | ---: |
+| Cases | 12 |
+| Attack success before guards | 1.000 |
+| Attack success after guards | 0.000 |

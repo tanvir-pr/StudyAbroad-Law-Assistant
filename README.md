@@ -2,7 +2,7 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 11 adds 30 unanswerable/out-of-scope questions, refusal/hallucination rates, and guardrails (instruction hierarchy, context sanitize, refuse without a matching citation).
+Day 12 / v0.3 adds an injection suite (jailbreak + poisoned chunks, before/after attack rates), drops poisoned retrieved chunks, and ships three JSON-schema tools: permit renewal date, document checklist, office lookup.
 
 ## Scope locked on 1 November 2026
 
@@ -134,3 +134,15 @@ python -m eval.hallucination_eval --mode qwen
 ```
 
 Cases: [eval/unanswerable.jsonl](eval/unanswerable.jsonl) (30). Results: [eval/results/hallucination_day11.md](eval/results/hallucination_day11.md). Guards live in `safety/guards.py` and are wired into `rag.ask`.
+
+## Injection suite + tools (day 12 / v0.3)
+
+```bash
+python -m eval.injection_eval
+python -m tools permit_renewal --json "{\"expiry_date\":\"2026-12-31\",\"as_of\":\"2026-11-01\"}"
+python -m tools document_checklist --json "{\"kind\":\"study_permit_extension\"}"
+python -m tools office_lookup --json "{\"office_id\":\"oif\"}"
+# PowerShell: use --json '{\"expiry_date\":\"2026-12-31\",\"as_of\":\"2026-11-01\"}'
+```
+
+Injection results: [eval/results/injection_v0.3.md](eval/results/injection_v0.3.md). Tool code: `tools/core.py` + `tools/schemas.py`.
