@@ -1,6 +1,6 @@
 # Data card — Hungary student-rules corpus
 
-Draft for day 12 / v0.3. This is not legal advice. The golden set stays frozen at 150 (`eval/GOLDEN_FREEZE.md`). Day 11 unanswerable metrics remain; day 12 adds injection before/after rates (`eval/results/injection_v0.3.md`) and structured tools under `tools/`. Chunking remains fixed 1200/200.
+Draft for day 15. This is not legal advice. The golden set stays frozen at 150 (`eval/GOLDEN_FREEZE.md`) and must not enter fine-tune data. Reviewed Q&A total: `finetune/qa_reviewed.jsonl` (800). Chunking remains fixed 1200/200.
 
 ## What this is
 
@@ -29,6 +29,7 @@ Hungary only: student residence permits, work during studies, Stipendium Hungari
 | Hallucination table | `eval/results/hallucination_day11.md` |
 | Injection suite (day 12) | 12 cases → `eval/results/injection_v0.3.md` |
 | Structured tools | `permit_renewal`, `document_checklist`, `office_lookup` |
+| Fine-tune Q&A (day 15) | 800 reviewed (`finetune/qa_reviewed.jsonl`) |
 | Dense backends compared | FAISS IndexFlatIP, Chroma (copied vectors) |
 | Reranker | BAAI/bge-reranker-v2-m3 |
 | Chunk strategies compared | fixed, recursive, section_aware |

@@ -2,7 +2,7 @@
 
 Plain-language answers about studying in Hungary, with a citation to an official page. This is not legal advice. Read [DISCLAIMER.md](DISCLAIMER.md) before using any answer.
 
-Day 12 / v0.3 adds an injection suite (jailbreak + poisoned chunks, before/after attack rates), drops poisoned retrieved chunks, and ships three JSON-schema tools: permit renewal date, document checklist, office lookup.
+Day 15 continues Q&A review only: **800** source-matched fine-tune pairs total (golden set excluded).
 
 ## Scope locked on 1 November 2026
 
@@ -146,3 +146,12 @@ python -m tools office_lookup --json "{\"office_id\":\"oif\"}"
 ```
 
 Injection results: [eval/results/injection_v0.3.md](eval/results/injection_v0.3.md). Tool code: `tools/core.py` + `tools/schemas.py`.
+
+## Fine-tune Q&A drafts (day 13)
+
+```bash
+python -m finetune.draft_qa --per-chunk 3
+python -m finetune.review_qa --target 800 --out finetune/qa_reviewed.jsonl --report finetune/REVIEW_DAY15.md --label "Day 15 Q&A review (total 800)"
+```
+
+Style: [finetune/STYLE_GUIDE.md](finetune/STYLE_GUIDE.md). Reviewed pairs: [finetune/qa_reviewed.jsonl](finetune/qa_reviewed.jsonl) (**800**). Reports: [REVIEW_DAY15.md](finetune/REVIEW_DAY15.md). Golden questions are blocked.

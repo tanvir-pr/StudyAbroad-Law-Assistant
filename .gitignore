@@ -19,3 +19,4 @@ models/
 *.safetensors
 .hf_token
 hf_token.txt
+finetune/qa_drafts.jsonl
