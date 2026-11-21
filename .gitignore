@@ -20,3 +20,7 @@ models/
 .hf_token
 hf_token.txt
 finetune/qa_drafts.jsonl
+finetune/runs/**/checkpoints/
+finetune/runs/**/adapter/
+t5/runs/**/checkpoints/
+t5/runs/**/model/

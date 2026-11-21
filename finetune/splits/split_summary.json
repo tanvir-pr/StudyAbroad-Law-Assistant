@@ -1,0 +1,15 @@
+{
+  "n_total": 1000,
+  "seed": 42,
+  "splits": {
+    "train": 798,
+    "validation": 98,
+    "test": 104
+  },
+  "topics": {
+    "eu_student_mobility": 89,
+    "stipendium_hungaricum": 331,
+    "student_residence_permit": 279,
+    "university_regulations": 301
+  }
+}

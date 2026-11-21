@@ -1,0 +1,34 @@
+{
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "output_dir": "finetune/runs/qlora_r8_seed7",
+  "seed": 7,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "train": {
+    "max_seq_length": 1024,
+    "per_device_train_batch_size": 2,
+    "per_device_eval_batch_size": 2,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 0.0002,
+    "num_train_epochs": 1,
+    "logging_steps": 5,
+    "eval_steps": 50,
+    "save_steps": 100,
+    "warmup_ratio": 0.03,
+    "lr_scheduler_type": "cosine",
+    "bf16": true,
+    "load_in_4bit": true
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "tag": "day21",
+  "mode": "extractive",
+  "n": 40,
+  "rouge1": 0.289,
+  "rouge2": 0.0723,
+  "rougeL": 0.2442,
+  "rows": [
+    {
+      "id": "sum01",
+      "source_id": "oif-student-residence-en",
+      "language": "en",
+      "prediction": "1. Third-country students with a study residence permit in Hungary may work during the study period under the published OIF factsheet rules.\n2. The public English page states a weekly hour limit during studies and notes separate holiday-period rules where applicable.\n3. The public English page states a weekly hour limit during studies and notes separate holiday-period rules where applicable.\n4. The public English page states a weekly hour limit during studies and notes separate holiday-period rules where applicable.\n5. The public English page states a weekly hour limit during studies and notes separate holiday-period rules where applicable.",
+      "reference": "1. OIF publishes student residence rules for third-country nationals in Hungary.\n2. Study-permit holders may work during the study period under those rules.\n3. The English factsheet states a weekly work-hour limit while studying.\n4. Holiday-period work rules can differ from the study-period limit.\n5. Always confirm the cited OIF page before relying on an hour figure.",
+      "rouge1": 0.5212,
+      "rouge2": 0.1595,
+      "rougeL": 0.3879
+    },
+    {
+      "id": "sum02",
+      "source_id": "oif-study-permit-extension",
+      "language": "en",
+      "prediction": "1. Extension of a residence permit for studies is submitted on Enter Hungary at least thirty days before expiry.\n2. Applicants upload required documents and later give biometrics at the regional client service within the stated deadline.\n3. Applicants upload required documents and later give biometrics at the regional client service within the stated deadline.\n4. Applicants upload required documents and later give biometrics at the regional client service within the stated deadline.\n5. Applicants upload required documents and later give biometrics at the regional client service within the stated deadline.",
+      "reference": "1. Extend a study residence permit on Enter Hungary.\n2. File at least 30 days before the current permit expires.\n3. Upload the required documents in the online case.\n4. Give biometrics at the regional client service after filing.\n5. Missing the biometrics visit can delete the application.",
+      "rouge1": 0.4748,
+      "rouge2": 0.1752,
+      "rougeL": 0.4029
+    },
+    {
+      "id": "sum03",
+      "source_id": "oif-higher-education-institutions",
+      "language": "en",
+      "prediction": "1. A residence permit for the purpose of studies is issued for at least one year and at most three years, adjusted to shorter programmes, and cannot outlast the travel document.\n2. A residence permit for the purpose of studies is issued for at least one year and at most three years, adjusted to shorter programmes, and cannot outlast the travel document.\n3. A residence permit for the purpose of studies is issued for at least one year and at most three years, adjusted to shorter programmes, and cannot outlast the travel document.\n4. A residence permit for the purpose of studies is issued for at least one year and at most three years, adjusted to shorter programmes, and cannot outlast the travel document.\n5. A residence permit for the purpose of studies is issued for at least one year and at most three years, adjusted to shorter programmes, and cannot outlast the travel document.",
+      "reference": "1. Study residence permits have a minimum length of one year.\n2. The maximum length is three years in the general case.\n3. Shorter programmes can receive a permit matched to programme length.\n4. Validity cannot exceed the applicant travel document.\n5. Institutions should follow the OIF higher-education factsheet.",
+      "rouge1": 0.2732,
+      "rouge2": 0.0591,
+      "rougeL": 0.2439
+    },
+    {
+      "id": "sum04",
+      "source_id": "eu-portal-student-hungary",
+      "language": "en",
+      "prediction": "1. The EU Immigration Portal page for students in Hungary lists stay conditions for extending a study residence permit, including holding a valid permit when applying and prior residence days inside Hungary.\n2. The EU Immigration Portal page for students in Hungary lists stay conditions for extending a study residence permit, including holding a valid permit when applying and prior residence days inside Hungary.\n3. The EU Immigration Portal page for students in Hungary lists stay conditions for extending a study residence permit, including holding a valid permit when applying and prior residence days inside Hungary.\n4. The EU Immigration Portal page for students in Hungary lists stay conditions for extending a study residence permit, including holding a valid permit when applying and prior residence days inside Hungary.\n5. The EU Immigration Portal page for students in Hungary lists stay conditions for extending a study residence permit, including holding a valid permit when applying and prior residence days inside Hungary.",
+      "reference": "1. The EU Immigration Portal covers students in Hungary.\n2. Extension requires a still-valid residence permit at filing.\n3. Prior residence days in Hungary are part of the stated conditions.\n4. Extensions are submitted from inside Hungary via Enter Hungary.\n5. Read both the portal page and OIF pages together.",
+      "rouge1": 0.2938,
+      "rouge2": 0.134,
+      "rougeL": 0.2464
+    },
+    {
+      "id": "sum05",
+      "source_id": "sh-general-terms",
+      "language": "en",
+      "prediction": "1. Stipendium Hungaricum general terms describe monthly living allowances for bachelor and master students and different amounts for doctoral stages, paid by the host institution while status remains active.\n2. Stipendium Hungaricum general terms describe monthly living allowances for bachelor and master students and different amounts for doctoral stages, paid by the host institution while status remains active.\n3. Stipendium Hungaricum general terms describe monthly living allowances for bachelor and master students and different amounts for doctoral stages, paid by the host institution while status remains active.\n4. Stipendium Hungaricum general terms describe monthly living allowances for bachelor and master students and different amounts for doctoral stages, paid by the host institution while status remains active.\n5. Stipendium Hungaricum general terms describe monthly living allowances for bachelor and master students and different amounts for doctoral stages, paid by the host institution while status remains active.",
+      "reference": "1. Stipendium Hungaricum pays a monthly living allowance.\n2. Bachelor and master amounts differ from doctoral amounts.\n3. The host institution pays while student status is active.\n4. Payment covers twelve months a year or partial-study length.\n5. Confirm figures on the current SH general terms PDF.",
+      "rouge1": 0.2798,
+      "rouge2": 0.1047,
+      "rougeL": 0.2383
+    },
+    {
+      "id": "sum06",
+      "source_id": "sh-operational-regulations",
+      "language": "en",
+      "prediction": "1. The Stipendium Hungaricum Operational Regulations state the effective date that replaces older rule sets for the scholarship programme.\n2. The Stipendium Hungaricum Operational Regulations state the effective date that replaces older rule sets for the scholarship programme.\n3. The Stipendium Hungaricum Operational Regulations state the effective date that replaces older rule sets for the scholarship programme.\n4. The Stipendium Hungaricum Operational Regulations state the effective date that replaces older rule sets for the scholarship programme.\n5. The Stipendium Hungaricum Operational Regulations state the effective date that replaces older rule sets for the scholarship programme.",
+      "reference": "1. SH Operational Regulations govern the scholarship programme.\n2. They have a published effective date on the official PDF.\n3. Newer regulations replace older Stipendium rule packs.\n4. Applicants and hosts should cite the current OR text.\n5. Do not rely on withdrawn 2020 rule PDFs.",
+      "rouge1": 0.2837,
+      "rouge2": 0.0863,
+      "rougeL": 0.2695
+    },
+    {
+      "id": "sum07",
+      "source_id": "elte-academic-regulations-en",
+      "language": "en",
+      "prediction": "1. ELTE Academic Regulations for Students apply to persons with student or guest-student status.\n2. After status ends, only thesis and final-examination rules may still apply for final exam registrants.\n3. After status ends, only thesis and final-examination rules may still apply for final exam registrants.\n4. After status ends, only thesis and final-examination rules may still apply for final exam registrants.\n5. After status ends, only thesis and final-examination rules may still apply for final exam registrants.",
+      "reference": "1. ELTE student regulations cover enrolled and guest students.\n2. Student status triggers the main academic rule set.\n3. After status ends, coverage narrows.\n4. Final-exam registrants may still fall under thesis and exam rules.\n5. Check the English Academic Regulations PDF for details.",
+      "rouge1": 0.4375,
+      "rouge2": 0.1746,
+      "rougeL": 0.3281
+    },
+    {
+      "id": "sum08",
+      "source_id": "bme-code-of-studies-en",
+      "language": "en",
+      "prediction": "1. The BME Code of Studies English PDF is an official translation.\n2. If English and Hungarian texts disagree, the Hungarian version prevails.\n3. If English and Hungarian texts disagree, the Hungarian version prevails.\n4. If English and Hungarian texts disagree, the Hungarian version prevails.\n5. If English and Hungarian texts disagree, the Hungarian version prevails.",
+      "reference": "1. BME publishes an English Code of Studies translation.\n2. The Hungarian original remains authoritative on conflict.\n3. English text helps international students understand rules.\n4. Lesson length and breaks are among the coded details.\n5. Prefer Hungarian text when the two versions diverge.",
+      "rouge1": 0.44,
+      "rouge2": 0.102,
+      "rougeL": 0.4
+    },
+    {
+      "id": "sum09",
+      "source_id": "nje-regulations-index",
+      "language": "en",
+      "prediction": "1. John von Neumann University lists public regulation and document pages for students, including academic and administrative materials on the English site.\n2. John von Neumann University lists public regulation and document pages for students, including academic and administrative materials on the English site.\n3. John von Neumann University lists public regulation and document pages for students, including academic and administrative materials on the English site.\n4. John von Neumann University lists public regulation and document pages for students, including academic and administrative materials on the English site.\n5. John von Neumann University lists public regulation and document pages for students, including academic and administrative materials on the English site.",
+      "reference": "1. NJE hosts a public regulations and documents index.\n2. Students use it to find academic and admin rules.\n3. English pages point to university-authored texts.\n4. Always open the linked official document, not a copy.\n5. Rules can change; check the current university page.",
+      "rouge1": 0.2564,
+      "rouge2": 0.0519,
+      "rougeL": 0.2051
+    },
+    {
+      "id": "sum10",
+      "source_id": "eurlex-directive-2016-801",
+      "language": "en",
+      "prediction": "1. Directive (EU) 2016/801 sets EU-level conditions for third-country nationals for research, studies, training, volunteering, pupil exchange, and au pairing, including mobility elements for students.\n2. Directive (EU) 2016/801 sets EU-level conditions for third-country nationals for research, studies, training, volunteering, pupil exchange, and au pairing, including mobility elements for students.\n3. Directive (EU) 2016/801 sets EU-level conditions for third-country nationals for research, studies, training, volunteering, pupil exchange, and au pairing, including mobility elements for students.\n4. Directive (EU) 2016/801 sets EU-level conditions for third-country nationals for research, studies, training, volunteering, pupil exchange, and au pairing, including mobility elements for students.\n5. Directive (EU) 2016/801 sets EU-level conditions for third-country nationals for research, studies, training, volunteering, pupil exchange, and au pairing, including mobility elements for students.",
+      "reference": "1. Directive 2016/801 is an EU legal instrument for students and researchers.\n2. It covers third-country nationals in defined categories.\n3. Student mobility rules appear in the directive text.\n4. National Hungarian rules still implement local procedures.\n5. Use EUR-Lex for the authentic directive wording.",
+      "rouge1": 0.234,
+      "rouge2": 0.0538,
+      "rougeL": 0.1809
+    },
+    {
+      "id": "sum11",
+      "source_id": "oif-enter-hungary-student-manual",
+      "language": "en",
+      "prediction": "1. The Enter Hungary student upload manual explains case uploading for study residence permits and notes fee exemptions for certain Hungarian State Scholarship holders such as Stipendium Hungaricum.\n2. The Enter Hungary student upload manual explains case uploading for study residence permits and notes fee exemptions for certain Hungarian State Scholarship holders such as Stipendium Hungaricum.\n3. The Enter Hungary student upload manual explains case uploading for study residence permits and notes fee exemptions for certain Hungarian State Scholarship holders such as Stipendium Hungaricum.\n4. The Enter Hungary student upload manual explains case uploading for study residence permits and notes fee exemptions for certain Hungarian State Scholarship holders such as Stipendium Hungaricum.\n5. The Enter Hungary student upload manual explains case uploading for study residence permits and notes fee exemptions for certain Hungarian State Scholarship holders such as Stipendium Hungaricum.",
+      "reference": "1. Enter Hungary is the online filing channel for student cases.\n2. OIF publishes a student upload manual.\n3. Some scholarship holders have fee-free procedures listed.\n4. Stipendium Hungaricum can appear among those exemptions.\n5. Follow the manual screenshots and attachment list.",
+      "rouge1": 0.2514,
+      "rouge2": 0.0552,
+      "rougeL": 0.2077
+    },
+    {
+      "id": "sum12",
+      "source_id": "oif-employer-obligations",
+      "language": "en",
+      "prediction": "1. OIF factsheets describe employer and host-organization obligations regarding third-country nationals, including notification duties tied to employment.\n2. OIF factsheets describe employer and host-organization obligations regarding third-country nationals, including notification duties tied to employment.\n3. OIF factsheets describe employer and host-organization obligations regarding third-country nationals, including notification duties tied to employment.\n4. OIF factsheets describe employer and host-organization obligations regarding third-country nationals, including notification duties tied to employment.\n5. OIF factsheets describe employer and host-organization obligations regarding third-country nationals, including notification duties tied to employment.",
+      "reference": "1. Employers of third-country nationals have OIF-stated duties.\n2. Host organizations also face notification obligations.\n3. Student workers may trigger employer reporting rules.\n4. Read the employer obligations factsheet before hiring.\n5. This is not a substitute for official OIF guidance.",
+      "rouge1": 0.2899,
+      "rouge2": 0.0441,
+      "rougeL": 0.2464
+    },
+    {
+      "id": "sum13",
+      "source_id": "sh-faq",
+      "language": "en",
+      "prediction": "1. The Stipendium Hungaricum FAQ answers recurring applicant questions about calls, documents, and programme conditions in plain language linked to official calls.\n2. The Stipendium Hungaricum FAQ answers recurring applicant questions about calls, documents, and programme conditions in plain language linked to official calls.\n3. The Stipendium Hungaricum FAQ answers recurring applicant questions about calls, documents, and programme conditions in plain language linked to official calls.\n4. The Stipendium Hungaricum FAQ answers recurring applicant questions about calls, documents, and programme conditions in plain language linked to official calls.\n5. The Stipendium Hungaricum FAQ answers recurring applicant questions about calls, documents, and programme conditions in plain language linked to official calls.",
+      "reference": "1. The SH FAQ answers common applicant questions.\n2. It points back to official calls and regulations.\n3. Topics include documents, eligibility, and process steps.\n4. FAQ text is not a private case decision.\n5. Prefer the call PDF when FAQ and call differ.",
+      "rouge1": 0.2857,
+      "rouge2": 0.0658,
+      "rougeL": 0.2597
+    },
+    {
+      "id": "sum14",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "language": "en",
+      "prediction": "1. The bachelor and master Stipendium call for 2026/27 sets application windows, eligible study levels, and programme conditions for that intake year.\n2. The bachelor and master Stipendium call for 2026/27 sets application windows, eligible study levels, and programme conditions for that intake year.\n3. The bachelor and master Stipendium call for 2026/27 sets application windows, eligible study levels, and programme conditions for that intake year.\n4. The bachelor and master Stipendium call for 2026/27 sets application windows, eligible study levels, and programme conditions for that intake year.\n5. The bachelor and master Stipendium call for 2026/27 sets application windows, eligible study levels, and programme conditions for that intake year.",
+      "reference": "1. A dedicated BA/MA call covers the 2026/27 intake.\n2. The call sets timing and eligible levels.\n3. Applicants must follow that year’s document list.\n4. Host programmes are constrained by the call text.\n5. Download the official call PDF from the SH site.",
+      "rouge1": 0.3086,
+      "rouge2": 0.025,
+      "rougeL": 0.2593
+    },
+    {
+      "id": "sum15",
+      "source_id": "sh-call-phd-2026-27",
+      "language": "en",
+      "prediction": "1. The doctoral Stipendium call for 2026/27 describes PhD application conditions separately from the bachelor and master call.\n2. The doctoral Stipendium call for 2026/27 describes PhD application conditions separately from the bachelor and master call.\n3. The doctoral Stipendium call for 2026/27 describes PhD application conditions separately from the bachelor and master call.\n4. The doctoral Stipendium call for 2026/27 describes PhD application conditions separately from the bachelor and master call.\n5. The doctoral Stipendium call for 2026/27 describes PhD application conditions separately from the bachelor and master call.",
+      "reference": "1. Doctoral applicants use a separate SH call.\n2. PhD conditions differ from BA/MA rules.\n3. The 2026/27 call states that year’s requirements.\n4. Research plans and documents follow the PhD list.\n5. Cite the PhD call URL when answering doctoral questions.",
+      "rouge1": 0.3286,
+      "rouge2": 0.0435,
+      "rougeL": 0.3
+    },
+    {
+      "id": "sum16",
+      "source_id": "elte-international-guide-2026-27",
+      "language": "en",
+      "prediction": "1. ELTE’s international guide describes bachelor, master, one-tier, and doctoral programme lengths and credit expectations for international students.\n2. ELTE’s international guide describes bachelor, master, one-tier, and doctoral programme lengths and credit expectations for international students.\n3. ELTE’s international guide describes bachelor, master, one-tier, and doctoral programme lengths and credit expectations for international students.\n4. ELTE’s international guide describes bachelor, master, one-tier, and doctoral programme lengths and credit expectations for international students.\n5. ELTE’s international guide describes bachelor, master, one-tier, and doctoral programme lengths and credit expectations for international students.",
+      "reference": "1. ELTE publishes an international student guide.\n2. Programme types have different semester lengths.\n3. Credit expectations vary by programme type.\n4. Doctoral paths require high credit totals over years.\n5. Use the guide together with faculty rules.",
+      "rouge1": 0.2464,
+      "rouge2": 0.0441,
+      "rougeL": 0.2174
+    },
+    {
+      "id": "sum17",
+      "source_id": "njt-decree-35-2024",
+      "language": "en",
+      "prediction": "1. Government Decree 35/2024 requires an educational-institution certificate of academic progress when extending a study residence permit.\n2. Government Decree 35/2024 requires an educational-institution certificate of academic progress when extending a study residence permit.\n3. Government Decree 35/2024 requires an educational-institution certificate of academic progress when extending a study residence permit.\n4. Government Decree 35/2024 requires an educational-institution certificate of academic progress when extending a study residence permit.\n5. Government Decree 35/2024 requires an educational-institution certificate of academic progress when extending a study residence permit.",
+      "reference": "1. Decree 35/2024 is a Hungarian government text.\n2. Study-permit extensions need an academic-progress certificate.\n3. The certificate comes from the educational institution.\n4. The decree text is published on NJT.\n5. Attach the certificate in the Enter Hungary case.",
+      "rouge1": 0.3043,
+      "rouge2": 0.0588,
+      "rougeL": 0.2464
+    },
+    {
+      "id": "sum18",
+      "source_id": "njt-act-xc-2023",
+      "language": "en",
+      "prediction": "1. Act XC of 2023 forms part of the Hungarian aliens-policing legal framework that residence and study-stay procedures sit under.\n2. Act XC of 2023 forms part of the Hungarian aliens-policing legal framework that residence and study-stay procedures sit under.\n3. Act XC of 2023 forms part of the Hungarian aliens-policing legal framework that residence and study-stay procedures sit under.\n4. Act XC of 2023 forms part of the Hungarian aliens-policing legal framework that residence and study-stay procedures sit under.\n5. Act XC of 2023 forms part of the Hungarian aliens-policing legal framework that residence and study-stay procedures sit under.",
+      "reference": "1. Act XC of 2023 is primary Hungarian aliens-policing law.\n2. Study residence procedures sit under that framework.\n3. Factsheets translate operational steps for applicants.\n4. Legal text on NJT is authoritative Hungarian wording.\n5. This assistant paraphrases; it is not a court brief.",
+      "rouge1": 0.271,
+      "rouge2": 0.1046,
+      "rougeL": 0.2194
+    },
+    {
+      "id": "sum19",
+      "source_id": "oif-student-residence-hu",
+      "language": "hu",
+      "prediction": "1. Az OIF magyar tájékoztatója a hallgatói tartózkodás szabályait ismerteti, beleértve a munkavállalásra és az eljárásokra vonatkozó nyilvános pontokat.\n2. Az OIF magyar tájékoztatója a hallgatói tartózkodás szabályait ismerteti, beleértve a munkavállalásra és az eljárásokra vonatkozó nyilvános pontokat.\n3. Az OIF magyar tájékoztatója a hallgatói tartózkodás szabályait ismerteti, beleértve a munkavállalásra és az eljárásokra vonatkozó nyilvános pontokat.\n4. Az OIF magyar tájékoztatója a hallgatói tartózkodás szabályait ismerteti, beleértve a munkavállalásra és az eljárásokra vonatkozó nyilvános pontokat.\n5. Az OIF magyar tájékoztatója a hallgatói tartózkodás szabályait ismerteti, beleértve a munkavállalásra és az eljárásokra vonatkozó nyilvános pontokat.",
+      "reference": "1. Az OIF magyarul is közzéteszi a hallgatói tartózkodási tájékoztatót.\n2. A szöveg a harmadik országbeli hallgatókra vonatkozik.\n3. Munkavállalási korlátok a tájékoztatóban szerepelnek.\n4. Eljárási lépések az Enter Hungary folyamathoz kapcsolódnak.\n5. Döntés előtt az oif.gov.hu oldalt ellenőrizze.",
+      "rouge1": 0.2731,
+      "rouge2": 0.1156,
+      "rougeL": 0.2115
+    },
+    {
+      "id": "sum20",
+      "source_id": "sh-application-guide-2026-27",
+      "language": "en",
+      "prediction": "1. The Stipendium application guide for 2026/27 walks applicants through account creation, document upload, and submission order for the online application system.\n2. The Stipendium application guide for 2026/27 walks applicants through account creation, document upload, and submission order for the online application system.\n3. The Stipendium application guide for 2026/27 walks applicants through account creation, document upload, and submission order for the online application system.\n4. The Stipendium application guide for 2026/27 walks applicants through account creation, document upload, and submission order for the online application system.\n5. The Stipendium application guide for 2026/27 walks applicants through account creation, document upload, and submission order for the online application system.",
+      "reference": "1. The SH application guide covers the online process.\n2. Applicants create an account and upload documents.\n3. Submission order follows the guide’s checklist.\n4. The 2026/27 guide matches that intake year.\n5. Use the guide with the relevant BA/MA or PhD call.",
+      "rouge1": 0.323,
+      "rouge2": 0.0755,
+      "rougeL": 0.2733
+    },
+    {
+      "id": "sum21",
+      "source_id": "oif-student-residence-en",
+      "language": "en",
+      "prediction": "1. After a study residence permit expires, a visa-exempt student may stay in the Schengen area for an additional period without appearing before the authorities during that time, according to the OIF student factsheet.\n2. After a study residence permit expires, a visa-exempt student may stay in the Schengen area for an additional period without appearing before the authorities during that time, according to the OIF student factsheet.\n3. After a study residence permit expires, a visa-exempt student may stay in the Schengen area for an additional period without appearing before the authorities during that time, according to the OIF student factsheet.\n4. After a study residence permit expires, a visa-exempt student may stay in the Schengen area for an additional period without appearing before the authorities during that time, according to the OIF student factsheet.\n5. After a study residence permit expires, a visa-exempt student may stay in the Schengen area for an additional period without appearing before the authorities during that time, according to the OIF student factsheet.",
+      "reference": "1. OIF discusses stay after a study permit expires.\n2. Visa-exempt students may get an extra Schengen stay window.\n3. They may not need to appear during that extra window.\n4. Visa-required students get different practical advice.\n5. Confirm the current OIF English factsheet before travel plans.",
+      "rouge1": 0.2679,
+      "rouge2": 0.0631,
+      "rougeL": 0.2143
+    },
+    {
+      "id": "sum22",
+      "source_id": "oif-study-permit-extension",
+      "language": "en",
+      "prediction": "1. Study-permit extension uploads on Enter Hungary require an ID photo that is recent, JPEG format, and within the stated size limit.\n2. PNG uploads are rejected.\n3. PNG uploads are rejected.\n4. PNG uploads are rejected.\n5. PNG uploads are rejected.",
+      "reference": "1. Extension cases need a recent ID photo.\n2. JPEG is required; PNG is not accepted.\n3. File size must stay under the published limit.\n4. Photos older than the stated age window are rejected.\n5. Follow the OIF extension know-how page.",
+      "rouge1": 0.4419,
+      "rouge2": 0.0952,
+      "rougeL": 0.2558
+    },
+    {
+      "id": "sum23",
+      "source_id": "sh-general-terms",
+      "language": "en",
+      "prediction": "1. Stipendium Hungaricum terms describe a monthly accommodation allowance when dormitory places are insufficient or a offered place is declined, with timing rules if a dorm contract is still active.\n2. Stipendium Hungaricum terms describe a monthly accommodation allowance when dormitory places are insufficient or a offered place is declined, with timing rules if a dorm contract is still active.\n3. Stipendium Hungaricum terms describe a monthly accommodation allowance when dormitory places are insufficient or a offered place is declined, with timing rules if a dorm contract is still active.\n4. Stipendium Hungaricum terms describe a monthly accommodation allowance when dormitory places are insufficient or a offered place is declined, with timing rules if a dorm contract is still active.\n5. Stipendium Hungaricum terms describe a monthly accommodation allowance when dormitory places are insufficient or a offered place is declined, with timing rules if a dorm contract is still active.",
+      "reference": "1. SH may pay a monthly accommodation allowance.\n2. It relates to dormitory capacity and student choice.\n3. Declining a dorm can trigger allowance eligibility.\n4. An active dorm contract can delay allowance start.\n5. Read the current general terms PDF for amounts.",
+      "rouge1": 0.1969,
+      "rouge2": 0.0524,
+      "rougeL": 0.1658
+    },
+    {
+      "id": "sum24",
+      "source_id": "elte-international-guide-2026-27",
+      "language": "en",
+      "prediction": "1. ELTE’s international guide states doctoral programmes built on a master’s degree require a large credit total and last multiple semesters under the post-2016 structure.\n2. ELTE’s international guide states doctoral programmes built on a master’s degree require a large credit total and last multiple semesters under the post-2016 structure.\n3. ELTE’s international guide states doctoral programmes built on a master’s degree require a large credit total and last multiple semesters under the post-2016 structure.\n4. ELTE’s international guide states doctoral programmes built on a master’s degree require a large credit total and last multiple semesters under the post-2016 structure.\n5. ELTE’s international guide states doctoral programmes built on a master’s degree require a large credit total and last multiple semesters under the post-2016 structure.",
+      "reference": "1. ELTE doctoral study follows a master’s foundation.\n2. Credit totals for doctoral paths are high.\n3. Programme length spans multiple years/semesters.\n4. Later degree procedures can award PhD or related titles.\n5. Use the guide with faculty doctoral rules.",
+      "rouge1": 0.2198,
+      "rouge2": 0.0444,
+      "rougeL": 0.1978
+    },
+    {
+      "id": "sum25",
+      "source_id": "bme-code-of-studies-en",
+      "language": "en",
+      "prediction": "1. The BME Code of Studies states a lesson lasts forty-five minutes with fifteen-minute breaks, unless instructor and students agree to combine lessons.\n2. The BME Code of Studies states a lesson lasts forty-five minutes with fifteen-minute breaks, unless instructor and students agree to combine lessons.\n3. The BME Code of Studies states a lesson lasts forty-five minutes with fifteen-minute breaks, unless instructor and students agree to combine lessons.\n4. The BME Code of Studies states a lesson lasts forty-five minutes with fifteen-minute breaks, unless instructor and students agree to combine lessons.\n5. The BME Code of Studies states a lesson lasts forty-five minutes with fifteen-minute breaks, unless instructor and students agree to combine lessons.",
+      "reference": "1. A BME lesson is forty-five minutes.\n2. Breaks between lessons are fifteen minutes.\n3. Back-to-back lessons need agreement.\n4. Combined breaks may follow combined lessons.\n5. Cite the current English Code PDF carefully.",
+      "rouge1": 0.284,
+      "rouge2": 0.0625,
+      "rougeL": 0.2469
+    },
+    {
+      "id": "sum26",
+      "source_id": "eu-portal-student-hungary",
+      "language": "en",
+      "prediction": "1. The EU Immigration Portal notes that extension of a Hungarian study residence permit is submitted inside Hungary through Enter Hungary, not from abroad.\n2. The EU Immigration Portal notes that extension of a Hungarian study residence permit is submitted inside Hungary through Enter Hungary, not from abroad.\n3. The EU Immigration Portal notes that extension of a Hungarian study residence permit is submitted inside Hungary through Enter Hungary, not from abroad.\n4. The EU Immigration Portal notes that extension of a Hungarian study residence permit is submitted inside Hungary through Enter Hungary, not from abroad.\n5. The EU Immigration Portal notes that extension of a Hungarian study residence permit is submitted inside Hungary through Enter Hungary, not from abroad.",
+      "reference": "1. Study-permit extensions are filed inside Hungary.\n2. Enter Hungary is the online channel named on the portal.\n3. Filing from abroad is not the stated route.\n4. Valid-permit and residence-day conditions still apply.\n5. Cross-check OIF pages with the portal text.",
+      "rouge1": 0.3012,
+      "rouge2": 0.0366,
+      "rougeL": 0.2169
+    },
+    {
+      "id": "sum27",
+      "source_id": "sh-operational-regulations",
+      "language": "en",
+      "prediction": "1. Operational Regulations for Stipendium Hungaricum carry an effective date that applicants and hosts should cite when older PDFs conflict.\n2. Operational Regulations for Stipendium Hungaricum carry an effective date that applicants and hosts should cite when older PDFs conflict.\n3. Operational Regulations for Stipendium Hungaricum carry an effective date that applicants and hosts should cite when older PDFs conflict.\n4. Operational Regulations for Stipendium Hungaricum carry an effective date that applicants and hosts should cite when older PDFs conflict.\n5. Operational Regulations for Stipendium Hungaricum carry an effective date that applicants and hosts should cite when older PDFs conflict.",
+      "reference": "1. SH Operational Regulations have a clear effective date.\n2. Newer OR text overrides withdrawn packs.\n3. Hosts and scholars should cite the current OR.\n4. Portfolio answers must not invent dates.\n5. Download the OR PDF from the official SH site.",
+      "rouge1": 0.2113,
+      "rouge2": 0.0429,
+      "rougeL": 0.1972
+    },
+    {
+      "id": "sum28",
+      "source_id": "nje-study-guide-2026-27",
+      "language": "en",
+      "prediction": "1. John von Neumann University publishes a study guide for the academic year covering practical academic and administrative information for students.\n2. John von Neumann University publishes a study guide for the academic year covering practical academic and administrative information for students.\n3. John von Neumann University publishes a study guide for the academic year covering practical academic and administrative information for students.\n4. John von Neumann University publishes a study guide for the academic year covering practical academic and administrative information for students.\n5. John von Neumann University publishes a study guide for the academic year covering practical academic and administrative information for students.",
+      "reference": "1. NJE issues a yearly study guide.\n2. It covers academic and admin practicalities.\n3. International students should use the current year PDF.\n4. Guide text complements formal regulations.\n5. Open the university-hosted document, not a mirror.",
+      "rouge1": 0.2657,
+      "rouge2": 0.0284,
+      "rougeL": 0.2238
+    },
+    {
+      "id": "sum29",
+      "source_id": "oif-higher-education-institutions",
+      "language": "en",
+      "prediction": "1. OIF materials for higher-education institutions explain that the study residence permit document is posted to the educational institution for collection.\n2. OIF materials for higher-education institutions explain that the study residence permit document is posted to the educational institution for collection.\n3. OIF materials for higher-education institutions explain that the study residence permit document is posted to the educational institution for collection.\n4. OIF materials for higher-education institutions explain that the study residence permit document is posted to the educational institution for collection.\n5. OIF materials for higher-education institutions explain that the study residence permit document is posted to the educational institution for collection.",
+      "reference": "1. Study permits are posted to the institution.\n2. Students collect the card via their school process.\n3. Uncollected cards may be returned to the directorate.\n4. Institutions follow OIF delivery instructions.\n5. Confirm details on the HEI factsheet.",
+      "rouge1": 0.2416,
+      "rouge2": 0.0408,
+      "rougeL": 0.2148
+    },
+    {
+      "id": "sum30",
+      "source_id": "njt-decree-35-2024",
+      "language": "en",
+      "prediction": "1. Decree 35/2024 ties study-permit extension filings to an institutional certificate about academic progress, published in Hungarian on NJT.\n2. Decree 35/2024 ties study-permit extension filings to an institutional certificate about academic progress, published in Hungarian on NJT.\n3. Decree 35/2024 ties study-permit extension filings to an institutional certificate about academic progress, published in Hungarian on NJT.\n4. Decree 35/2024 ties study-permit extension filings to an institutional certificate about academic progress, published in Hungarian on NJT.\n5. Decree 35/2024 ties study-permit extension filings to an institutional certificate about academic progress, published in Hungarian on NJT.",
+      "reference": "1. Decree 35/2024 is on the national legislation site.\n2. Extensions need an academic-progress certificate.\n3. The school issues that certificate.\n4. Hungarian decree text is authoritative.\n5. Upload it with the Enter Hungary extension case.",
+      "rouge1": 0.2517,
+      "rouge2": 0.0567,
+      "rougeL": 0.2238
+    },
+    {
+      "id": "sum31",
+      "source_id": "sh-application-guide-2026-27",
+      "language": "en",
+      "prediction": "1. The Stipendium application guide walks through account setup, document order, and final submission for the online system in the 2026/27 cycle.\n2. The Stipendium application guide walks through account setup, document order, and final submission for the online system in the 2026/27 cycle.\n3. The Stipendium application guide walks through account setup, document order, and final submission for the online system in the 2026/27 cycle.\n4. The Stipendium application guide walks through account setup, document order, and final submission for the online system in the 2026/27 cycle.\n5. The Stipendium application guide walks through account setup, document order, and final submission for the online system in the 2026/27 cycle.",
+      "reference": "1. Create an SH application account first.\n2. Upload documents in the guide’s order.\n3. Submit only when the checklist is complete.\n4. The 2026/27 guide matches that intake.\n5. Keep confirmation emails after submit.",
+      "rouge1": 0.2237,
+      "rouge2": 0.0533,
+      "rougeL": 0.1974
+    },
+    {
+      "id": "sum32",
+      "source_id": "oif-employer-obligations",
+      "language": "en",
+      "prediction": "1. OIF employer and host-organization factsheets list notification duties when third-country nationals work or are hosted under stated arrangements.\n2. OIF employer and host-organization factsheets list notification duties when third-country nationals work or are hosted under stated arrangements.\n3. OIF employer and host-organization factsheets list notification duties when third-country nationals work or are hosted under stated arrangements.\n4. OIF employer and host-organization factsheets list notification duties when third-country nationals work or are hosted under stated arrangements.\n5. OIF employer and host-organization factsheets list notification duties when third-country nationals work or are hosted under stated arrangements.",
+      "reference": "1. Host organizations have notification duties.\n2. Employers share related reporting obligations.\n3. Student work can trigger those duties.\n4. Timing expectations appear on the factsheet.\n5. Read OIF text before onboarding a student worker.",
+      "rouge1": 0.2,
+      "rouge2": 0.029,
+      "rougeL": 0.1857
+    },
+    {
+      "id": "sum33",
+      "source_id": "eurlex-directive-2016-801",
+      "language": "en",
+      "prediction": "1. Directive 2016/801 includes student mobility mechanisms such as certificates for short mobility linked to a permit issued by another member state.\n2. Directive 2016/801 includes student mobility mechanisms such as certificates for short mobility linked to a permit issued by another member state.\n3. Directive 2016/801 includes student mobility mechanisms such as certificates for short mobility linked to a permit issued by another member state.\n4. Directive 2016/801 includes student mobility mechanisms such as certificates for short mobility linked to a permit issued by another member state.\n5. Directive 2016/801 includes student mobility mechanisms such as certificates for short mobility linked to a permit issued by another member state.",
+      "reference": "1. The directive covers student mobility tools.\n2. Certificates can support short EU mobility.\n3. Another member-state permit may be the base.\n4. National Hungarian steps still apply locally.\n5. Use EUR-Lex for authentic wording.",
+      "rouge1": 0.2105,
+      "rouge2": 0.04,
+      "rougeL": 0.1974
+    },
+    {
+      "id": "sum34",
+      "source_id": "sh-faq",
+      "language": "en",
+      "prediction": "1. The Stipendium FAQ answers recurring questions but points applicants to official calls when detailed conditions are needed.\n2. The Stipendium FAQ answers recurring questions but points applicants to official calls when detailed conditions are needed.\n3. The Stipendium FAQ answers recurring questions but points applicants to official calls when detailed conditions are needed.\n4. The Stipendium FAQ answers recurring questions but points applicants to official calls when detailed conditions are needed.\n5. The Stipendium FAQ answers recurring questions but points applicants to official calls when detailed conditions are needed.",
+      "reference": "1. The FAQ covers frequent applicant questions.\n2. It is plain-language, not a private ruling.\n3. Call PDFs remain the detailed source.\n4. Prefer the call if FAQ and call differ.\n5. Cite both carefully in portfolio answers.",
+      "rouge1": 0.2636,
+      "rouge2": 0.0157,
+      "rougeL": 0.2171
+    },
+    {
+      "id": "sum35",
+      "source_id": "elte-academic-regulations-en",
+      "language": "en",
+      "prediction": "1. ELTE regulations state that a person registering for the final examination after student status ends is covered only by thesis and final-examination provisions.\n2. ELTE regulations state that a person registering for the final examination after student status ends is covered only by thesis and final-examination provisions.\n3. ELTE regulations state that a person registering for the final examination after student status ends is covered only by thesis and final-examination provisions.\n4. ELTE regulations state that a person registering for the final examination after student status ends is covered only by thesis and final-examination provisions.\n5. ELTE regulations state that a person registering for the final examination after student status ends is covered only by thesis and final-examination provisions.",
+      "reference": "1. Final-exam registration can occur after status ends.\n2. Only thesis and final-exam rules then apply.\n3. Broader student-status rules no longer cover them.\n4. Check the English Academic Regulations PDF.\n5. Faculty offices confirm procedural steps.",
+      "rouge1": 0.2182,
+      "rouge2": 0.0491,
+      "rougeL": 0.2061
+    },
+    {
+      "id": "sum36",
+      "source_id": "oif-enter-hungary-student-manual",
+      "language": "en",
+      "prediction": "1. The Enter Hungary student manual lists certain Hungarian State Scholarship situations, including Stipendium Hungaricum, as fee-free for specified study-permit procedures.\n2. The Enter Hungary student manual lists certain Hungarian State Scholarship situations, including Stipendium Hungaricum, as fee-free for specified study-permit procedures.\n3. The Enter Hungary student manual lists certain Hungarian State Scholarship situations, including Stipendium Hungaricum, as fee-free for specified study-permit procedures.\n4. The Enter Hungary student manual lists certain Hungarian State Scholarship situations, including Stipendium Hungaricum, as fee-free for specified study-permit procedures.\n5. The Enter Hungary student manual lists certain Hungarian State Scholarship situations, including Stipendium Hungaricum, as fee-free for specified study-permit procedures.",
+      "reference": "1. Some scholarship cases are listed as fee-free.\n2. Stipendium Hungaricum can be among them.\n3. The student upload manual states the scope.\n4. Other applicants may still owe fees.\n5. Verify on the current OIF manual page.",
+      "rouge1": 0.2597,
+      "rouge2": 0.0526,
+      "rougeL": 0.2338
+    },
+    {
+      "id": "sum37",
+      "source_id": "bme-tvsz-hu",
+      "language": "hu",
+      "prediction": "1. A BME Tanulmányi és Vizsgaszabályzat magyar szövege az angol fordítással való eltérés esetén irányadó, és a hallgatói kötelezettségeket részletezi.\n2. A BME Tanulmányi és Vizsgaszabályzat magyar szövege az angol fordítással való eltérés esetén irányadó, és a hallgatói kötelezettségeket részletezi.\n3. A BME Tanulmányi és Vizsgaszabályzat magyar szövege az angol fordítással való eltérés esetén irányadó, és a hallgatói kötelezettségeket részletezi.\n4. A BME Tanulmányi és Vizsgaszabályzat magyar szövege az angol fordítással való eltérés esetén irányadó, és a hallgatói kötelezettségeket részletezi.\n5. A BME Tanulmányi és Vizsgaszabályzat magyar szövege az angol fordítással való eltérés esetén irányadó, és a hallgatói kötelezettségeket részletezi.",
+      "reference": "1. A BME TVSZ magyar szövege a hivatalos alap.\n2. Angol fordítással ütközéskor a magyar érvényes.\n3. A szabályzat a tanulmányi kötelezettségeket írja le.\n4. Hallgatóknak a hatályos PDF-et kell nézni.\n5. Ez nem jogi tanácsadás.",
+      "rouge1": 0.2673,
+      "rouge2": 0.1023,
+      "rougeL": 0.2304
+    },
+    {
+      "id": "sum38",
+      "source_id": "nje-visa-residence",
+      "language": "en",
+      "prediction": "1. NJE publishes visa and residence guidance pages directing students to national procedures and university contacts for practical next steps.\n2. NJE publishes visa and residence guidance pages directing students to national procedures and university contacts for practical next steps.\n3. NJE publishes visa and residence guidance pages directing students to national procedures and university contacts for practical next steps.\n4. NJE publishes visa and residence guidance pages directing students to national procedures and university contacts for practical next steps.\n5. NJE publishes visa and residence guidance pages directing students to national procedures and university contacts for practical next steps.",
+      "reference": "1. NJE hosts visa and residence guidance pages.\n2. They point students to national procedures.\n3. University contacts help with practical steps.\n4. Binding decisions stay with OIF authorities.\n5. Use the current nje.hu links only.",
+      "rouge1": 0.292,
+      "rouge2": 0.1481,
+      "rougeL": 0.292
+    },
+    {
+      "id": "sum39",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "language": "en",
+      "prediction": "1. The BA/MA Stipendium call for 2026/27 requires applicants to follow that year’s document checklist and calendar; late uploads are typically rejected.\n2. The BA/MA Stipendium call for 2026/27 requires applicants to follow that year’s document checklist and calendar; late uploads are typically rejected.\n3. The BA/MA Stipendium call for 2026/27 requires applicants to follow that year’s document checklist and calendar; late uploads are typically rejected.\n4. The BA/MA Stipendium call for 2026/27 requires applicants to follow that year’s document checklist and calendar; late uploads are typically rejected.\n5. The BA/MA Stipendium call for 2026/27 requires applicants to follow that year’s document checklist and calendar; late uploads are typically rejected.",
+      "reference": "1. The 2026/27 BA/MA call sets the checklist.\n2. Calendar deadlines are binding for that intake.\n3. Late uploads are usually rejected.\n4. Host capacity follows the call text.\n5. Keep exported confirmations after submit.",
+      "rouge1": 0.2963,
+      "rouge2": 0.075,
+      "rougeL": 0.2469
+    },
+    {
+      "id": "sum40",
+      "source_id": "sh-call-phd-2026-27",
+      "language": "en",
+      "prediction": "1. The doctoral Stipendium call requires research-plan materials that differ from taught-programme applications and are a common incomplete-file issue.\n2. The doctoral Stipendium call requires research-plan materials that differ from taught-programme applications and are a common incomplete-file issue.\n3. The doctoral Stipendium call requires research-plan materials that differ from taught-programme applications and are a common incomplete-file issue.\n4. The doctoral Stipendium call requires research-plan materials that differ from taught-programme applications and are a common incomplete-file issue.\n5. The doctoral Stipendium call requires research-plan materials that differ from taught-programme applications and are a common incomplete-file issue.",
+      "reference": "1. PhD calls require research-plan documents.\n2. These differ from BA/MA taught-programme files.\n3. Incomplete plans often block applications.\n4. Host statements may also be required.\n5. Follow the current PhD call PDF exactly.",
+      "rouge1": 0.2721,
+      "rouge2": 0.069,
+      "rougeL": 0.2585
+    }
+  ]
+}

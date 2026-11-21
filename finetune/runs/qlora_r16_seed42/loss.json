@@ -1,0 +1,209 @@
+{
+  "status": "dry_run",
+  "note": "No CUDA QLoRA run on this machine. Re-run without --dry-run on a T4.",
+  "seed": 42,
+  "lora_r": 16,
+  "n_train": 798,
+  "history": [
+    {
+      "step": 1,
+      "loss": 2.2136,
+      "epoch": 0.025
+    },
+    {
+      "step": 2,
+      "loss": 2.0175,
+      "epoch": 0.05
+    },
+    {
+      "step": 3,
+      "loss": 1.8471,
+      "epoch": 0.075
+    },
+    {
+      "step": 4,
+      "loss": 1.6883,
+      "epoch": 0.1
+    },
+    {
+      "step": 5,
+      "loss": 1.5627,
+      "epoch": 0.125
+    },
+    {
+      "step": 6,
+      "loss": 1.4447,
+      "epoch": 0.15
+    },
+    {
+      "step": 7,
+      "loss": 1.3448,
+      "epoch": 0.175
+    },
+    {
+      "step": 8,
+      "loss": 1.2207,
+      "epoch": 0.2
+    },
+    {
+      "step": 9,
+      "loss": 1.1199,
+      "epoch": 0.225
+    },
+    {
+      "step": 10,
+      "loss": 1.0115,
+      "epoch": 0.25
+    },
+    {
+      "step": 11,
+      "loss": 0.9194,
+      "epoch": 0.275
+    },
+    {
+      "step": 12,
+      "loss": 0.846,
+      "epoch": 0.3
+    },
+    {
+      "step": 13,
+      "loss": 0.7594,
+      "epoch": 0.325
+    },
+    {
+      "step": 14,
+      "loss": 0.6866,
+      "epoch": 0.35
+    },
+    {
+      "step": 15,
+      "loss": 0.6377,
+      "epoch": 0.375
+    },
+    {
+      "step": 16,
+      "loss": 0.5885,
+      "epoch": 0.4
+    },
+    {
+      "step": 17,
+      "loss": 0.5302,
+      "epoch": 0.425
+    },
+    {
+      "step": 18,
+      "loss": 0.4913,
+      "epoch": 0.45
+    },
+    {
+      "step": 19,
+      "loss": 0.4644,
+      "epoch": 0.475
+    },
+    {
+      "step": 20,
+      "loss": 0.4075,
+      "epoch": 0.5
+    },
+    {
+      "step": 21,
+      "loss": 0.3872,
+      "epoch": 0.525
+    },
+    {
+      "step": 22,
+      "loss": 0.3641,
+      "epoch": 0.55
+    },
+    {
+      "step": 23,
+      "loss": 0.35,
+      "epoch": 0.575
+    },
+    {
+      "step": 24,
+      "loss": 0.35,
+      "epoch": 0.6
+    },
+    {
+      "step": 25,
+      "loss": 0.35,
+      "epoch": 0.625
+    },
+    {
+      "step": 26,
+      "loss": 0.35,
+      "epoch": 0.65
+    },
+    {
+      "step": 27,
+      "loss": 0.35,
+      "epoch": 0.675
+    },
+    {
+      "step": 28,
+      "loss": 0.35,
+      "epoch": 0.7
+    },
+    {
+      "step": 29,
+      "loss": 0.35,
+      "epoch": 0.725
+    },
+    {
+      "step": 30,
+      "loss": 0.35,
+      "epoch": 0.75
+    },
+    {
+      "step": 31,
+      "loss": 0.35,
+      "epoch": 0.775
+    },
+    {
+      "step": 32,
+      "loss": 0.35,
+      "epoch": 0.8
+    },
+    {
+      "step": 33,
+      "loss": 0.35,
+      "epoch": 0.825
+    },
+    {
+      "step": 34,
+      "loss": 0.35,
+      "epoch": 0.85
+    },
+    {
+      "step": 35,
+      "loss": 0.35,
+      "epoch": 0.875
+    },
+    {
+      "step": 36,
+      "loss": 0.35,
+      "epoch": 0.9
+    },
+    {
+      "step": 37,
+      "loss": 0.35,
+      "epoch": 0.925
+    },
+    {
+      "step": 38,
+      "loss": 0.35,
+      "epoch": 0.95
+    },
+    {
+      "step": 39,
+      "loss": 0.35,
+      "epoch": 0.975
+    },
+    {
+      "step": 40,
+      "loss": 0.35,
+      "epoch": 1.0
+    }
+  ]
+}

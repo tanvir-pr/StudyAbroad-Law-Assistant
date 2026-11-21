@@ -1,0 +1,3126 @@
+{
+  "tag": "v0.4",
+  "echo": true,
+  "n": 30,
+  "summary": {
+    "n": 30,
+    "arms": {
+      "base": {
+        "refuse_rate": 0.0,
+        "citation_rate": 0.0,
+        "p50_ms": 0,
+        "p95_ms": 0
+      },
+      "base_lora": {
+        "refuse_rate": 1.0,
+        "citation_rate": 0.0,
+        "p50_ms": 0,
+        "p95_ms": 0
+      },
+      "rag": {
+        "refuse_rate": 0.0,
+        "citation_rate": 1.0,
+        "p50_ms": 277,
+        "p95_ms": 357
+      },
+      "rag_lora": {
+        "refuse_rate": 0.0,
+        "citation_rate": 1.0,
+        "p50_ms": 277,
+        "p95_ms": 324
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "question": "How many hours a week may a third-country national with a Hungarian residence permit for studies work during the study period?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "sh-operational-regulations",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7222222222222222
+            }
+          ],
+          "latency_ms": 1285,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "sh-operational-regulations",
+              "score": 0.7777777777777778
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7222222222222222
+            }
+          ],
+          "latency_ms": 309,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g02",
+      "question": "Outside the study period, how long may that same student work full-time in Hungary?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-faq",
+              "source_url": "https://stipendiumhungaricum.hu/scholarship-holders/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-faq",
+              "score": 0.6923076923076923
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6923076923076923
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6153846153846154
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6153846153846154
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6153846153846154
+            }
+          ],
+          "latency_ms": 357,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-faq",
+              "source_url": "https://stipendiumhungaricum.hu/scholarship-holders/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-faq",
+              "score": 0.6923076923076923
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6923076923076923
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6153846153846154
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6153846153846154
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6153846153846154
+            }
+          ],
+          "latency_ms": 322,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g03",
+      "question": "How long can a residence permit for the purpose of studies be issued for?",
+      "source_id": "oif-higher-education-institutions",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-student-residence-en",
+              "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.9090909090909091
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8181818181818182
+            },
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.8181818181818182
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8181818181818182
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7272727272727273
+            }
+          ],
+          "latency_ms": 311,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-student-residence-en",
+              "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.9090909090909091
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8181818181818182
+            },
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.8181818181818182
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8181818181818182
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7272727272727273
+            }
+          ],
+          "latency_ms": 286,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g04",
+      "question": "When and how must a student apply to extend a residence permit for studies?",
+      "source_id": "oif-higher-education-institutions",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6363636363636364
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6363636363636364
+            }
+          ],
+          "latency_ms": 339,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6363636363636364
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6363636363636364
+            }
+          ],
+          "latency_ms": 350,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g05",
+      "question": "What two stay conditions does the EU Immigration Portal state for extending a Hungarian study residence permit?",
+      "source_id": "eu-portal-student-hungary",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.6
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "oif-enter-hungary-student-manual",
+              "score": 0.5333333333333333
+            }
+          ],
+          "latency_ms": 275,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.6
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "oif-enter-hungary-student-manual",
+              "score": 0.5333333333333333
+            }
+          ],
+          "latency_ms": 261,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g06",
+      "question": "After submitting a study-permit extension, what is the deadline for giving biometric data?",
+      "source_id": "oif-study-permit-extension",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-faq",
+              "source_url": "https://stipendiumhungaricum.hu/scholarship-holders/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-faq",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.45454545454545453
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.45454545454545453
+            },
+            {
+              "source_id": "bme-code-of-studies-en",
+              "score": 0.36363636363636365
+            }
+          ],
+          "latency_ms": 323,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-faq",
+              "source_url": "https://stipendiumhungaricum.hu/scholarship-holders/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-faq",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.45454545454545453
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.45454545454545453
+            },
+            {
+              "source_id": "bme-code-of-studies-en",
+              "score": 0.36363636363636365
+            }
+          ],
+          "latency_ms": 285,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g07",
+      "question": "What administrative fee does the EU Immigration Portal list when a study residence permit is requested at a Hungarian consulate?",
+      "source_id": "eu-portal-student-hungary",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-student-residence-en",
+              "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.4666666666666667
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.4666666666666667
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.4
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.4
+            }
+          ],
+          "latency_ms": 278,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-student-residence-en",
+              "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5333333333333333
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.4666666666666667
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.4666666666666667
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.4
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.4
+            }
+          ],
+          "latency_ms": 299,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g08",
+      "question": "How soon must an employer notify the immigration authority when a student residence-permit holder starts work?",
+      "source_id": "oif-employer-obligations",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-employer-obligations",
+              "source_url": "https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.42857142857142855
+            }
+          ],
+          "latency_ms": 284,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-employer-obligations](https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-employer-obligations",
+              "source_url": "https://oif.gov.hu/factsheets/obligations-of-the-employer-and-host-organization-regarding-third-country-nationals"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.5
+            },
+            {
+              "source_id": "oif-employer-obligations",
+              "score": 0.42857142857142855
+            }
+          ],
+          "latency_ms": 276,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g09",
+      "question": "Does a Stipendium Hungaricum holder have to live in Hungary during the study period?",
+      "source_id": "sh-faq",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            }
+          ],
+          "latency_ms": 298,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            }
+          ],
+          "latency_ms": 271,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g10",
+      "question": "What minimum credit average does Stipendium Hungaricum require, unless the university sets a different rule?",
+      "source_id": "sh-faq",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-regulations-index",
+              "source_url": "https://stipendiumhungaricum.hu/apply/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.5
+            },
+            {
+              "source_id": "sh-operational-regulations",
+              "score": 0.42857142857142855
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.42857142857142855
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.42857142857142855
+            }
+          ],
+          "latency_ms": 359,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-regulations-index](https://stipendiumhungaricum.hu/apply/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-regulations-index",
+              "source_url": "https://stipendiumhungaricum.hu/apply/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.5
+            },
+            {
+              "source_id": "sh-operational-regulations",
+              "score": 0.42857142857142855
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.42857142857142855
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.42857142857142855
+            }
+          ],
+          "latency_ms": 272,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g11",
+      "question": "How much is the Stipendium Hungaricum monthly living allowance for a bachelor's or master's student?",
+      "source_id": "sh-general-terms",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-general-terms",
+              "source_url": "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5833333333333334
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.5833333333333334
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.5833333333333334
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.5
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5
+            }
+          ],
+          "latency_ms": 333,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-general-terms",
+              "source_url": "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5833333333333334
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.5833333333333334
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.5833333333333334
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.5
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5
+            }
+          ],
+          "latency_ms": 324,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g12",
+      "question": "Where does a new John von Neumann University student collect the residence permit, and by when?",
+      "source_id": "nje-study-guide-2026-27",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "nje-study-guide-2026-27",
+              "source_url": "https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "nje-study-guide-2026-27",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "nje-visa-residence",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "nje-study-guide-2026-27",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "nje-academic-regulations-en",
+              "score": 0.5
+            },
+            {
+              "source_id": "nje-regulations-index",
+              "score": 0.5
+            }
+          ],
+          "latency_ms": 271,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [nje-study-guide-2026-27](https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "nje-study-guide-2026-27",
+              "source_url": "https://nje.hu/storage/content/2240/files/NJE%20Study-Guide_2026-27-fall.pdf?r=fef2c155239ec3e19546b89223a11cf2"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "nje-study-guide-2026-27",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "nje-visa-residence",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "nje-study-guide-2026-27",
+              "score": 0.5714285714285714
+            },
+            {
+              "source_id": "nje-academic-regulations-en",
+              "score": 0.5
+            },
+            {
+              "source_id": "nje-regulations-index",
+              "score": 0.5
+            }
+          ],
+          "latency_ms": 304,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g13",
+      "question": "If the English and Hungarian texts of the BME Code of Studies disagree, which one applies?",
+      "source_id": "bme-code-of-studies-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-application-guide-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-application-guide-2026-27",
+              "score": 0.6153846153846154
+            },
+            {
+              "source_id": "bme-code-of-studies-en",
+              "score": 0.5384615384615384
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.5384615384615384
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.5384615384615384
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.5384615384615384
+            }
+          ],
+          "latency_ms": 282,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-application-guide-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-application-guide-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/11/Application_Guide_for_the_Stipendium_Hungaricum_Programme_2026_27_final.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-application-guide-2026-27",
+              "score": 0.6153846153846154
+            },
+            {
+              "source_id": "bme-code-of-studies-en",
+              "score": 0.5384615384615384
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.5384615384615384
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.5384615384615384
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.5384615384615384
+            }
+          ],
+          "latency_ms": 334,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g14",
+      "question": "Who do ELTE's Academic Regulations for Students apply to?",
+      "source_id": "elte-academic-regulations-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "elte-academic-regulations-en",
+              "source_url": "https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.625
+            }
+          ],
+          "latency_ms": 276,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [elte-academic-regulations-en](https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "elte-academic-regulations-en",
+              "source_url": "https://www.elte.hu/en/dstore/document/49336/ELTE_SZMSZ_II_EN.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "elte-academic-regulations-en",
+              "score": 0.625
+            }
+          ],
+          "latency_ms": 294,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g15",
+      "question": "What minimum weekly work limit does Directive 2016/801 require Member States to allow students?",
+      "source_id": "eurlex-directive-2016-801",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            }
+          ],
+          "latency_ms": 277,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [eurlex-directive-2016-801](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0801"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            },
+            {
+              "source_id": "eurlex-directive-2016-801",
+              "score": 0.46153846153846156
+            }
+          ],
+          "latency_ms": 257,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g16",
+      "question": "How long can a Hungarian student mobility residence permit or student mobility certificate be valid?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.9166666666666666
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.8333333333333334
+            }
+          ],
+          "latency_ms": 252,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.9166666666666666
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.8333333333333334
+            }
+          ],
+          "latency_ms": 300,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g17",
+      "question": "Can a student mobility residence permit or student mobility certificate be extended?",
+      "source_id": "oif-higher-education-institutions",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.8888888888888888
+            }
+          ],
+          "latency_ms": 254,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.8888888888888888
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.8888888888888888
+            }
+          ],
+          "latency_ms": 322,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g18",
+      "question": "Can a person with a Hungarian study residence permit get a residence permit for family reunification?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7692307692307693
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7692307692307693
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7692307692307693
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6923076923076923
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6923076923076923
+            }
+          ],
+          "latency_ms": 269,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7692307692307693
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7692307692307693
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7692307692307693
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6923076923076923
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6923076923076923
+            }
+          ],
+          "latency_ms": 250,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g19",
+      "question": "How long does someone have to appeal a refusal of a study residence permit?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-student-residence-en",
+              "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.5
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.4
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.4
+            }
+          ],
+          "latency_ms": 313,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-student-residence-en](https://oif.gov.hu/factsheets/residence-of-the-student-pupil). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-student-residence-en",
+              "source_url": "https://oif.gov.hu/factsheets/residence-of-the-student-pupil"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.5
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.4
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.4
+            }
+          ],
+          "latency_ms": 318,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g20",
+      "question": "When can a student apply for a Hungarian residence permit to seek a job or start a business?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "oif-enter-hungary-student-manual",
+              "score": 0.6666666666666666
+            }
+          ],
+          "latency_ms": 327,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [eu-portal-student-hungary](https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "source_url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-hungary_en"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.8333333333333334
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.75
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "oif-enter-hungary-student-manual",
+              "score": 0.6666666666666666
+            }
+          ],
+          "latency_ms": 289,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g21",
+      "question": "After a study residence permit expires, may a visa-exempt student stay in the Schengen area without appearing before the authorities?",
+      "source_id": "oif-student-residence-en",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "source_url": "https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7058823529411765
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6470588235294118
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6470588235294118
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6470588235294118
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6470588235294118
+            }
+          ],
+          "latency_ms": 260,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "source_url": "https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7058823529411765
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6470588235294118
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6470588235294118
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6470588235294118
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.6470588235294118
+            }
+          ],
+          "latency_ms": 271,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g22",
+      "question": "Can a student who is in Hungary on a short-stay C visa apply for a study residence permit from inside Hungary?",
+      "source_id": "oif-higher-education-institutions",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "source_url": "https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7142857142857143
+            }
+          ],
+          "latency_ms": 248,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [elte-international-guide-2026-27](https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "source_url": "https://www.elte.hu/en/dstore/document/335230/guide_2026.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7142857142857143
+            }
+          ],
+          "latency_ms": 251,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g23",
+      "question": "What must the certificate of academic progress attached to a study-permit extension contain?",
+      "source_id": "oif-higher-education-institutions",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "source_url": "https://oif.gov.hu/factsheets/for-higher-education-institutions"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.5
+            }
+          ],
+          "latency_ms": 237,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "source_url": "https://oif.gov.hu/factsheets/for-higher-education-institutions"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.6
+            },
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.5
+            }
+          ],
+          "latency_ms": 265,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g24",
+      "question": "Where is the study residence permit document delivered?",
+      "source_id": "oif-higher-education-institutions",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "source_url": "https://oif.gov.hu/factsheets/for-higher-education-institutions"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7142857142857143
+            }
+          ],
+          "latency_ms": 270,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-higher-education-institutions](https://oif.gov.hu/factsheets/for-higher-education-institutions). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "source_url": "https://oif.gov.hu/factsheets/for-higher-education-institutions"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-higher-education-institutions",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "elte-international-guide-2026-27",
+              "score": 0.7142857142857143
+            },
+            {
+              "source_id": "eu-portal-student-hungary",
+              "score": 0.7142857142857143
+            }
+          ],
+          "latency_ms": 235,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g25",
+      "question": "What are the photo rules for a study-permit extension uploaded on Enter Hungary?",
+      "source_id": "oif-study-permit-extension",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-enter-hungary-student-manual",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5454545454545454
+            }
+          ],
+          "latency_ms": 253,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [oif-study-permit-extension](https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-study-permit-extension",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-enter-hungary-student-manual",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "oif-student-residence-en",
+              "score": 0.5454545454545454
+            }
+          ],
+          "latency_ms": 264,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g26",
+      "question": "How often, and by when, can a Stipendium Hungaricum holder change host institution, study programme, or language of studies?",
+      "source_id": "sh-faq",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-faq",
+              "source_url": "https://stipendiumhungaricum.hu/scholarship-holders/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-faq",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6666666666666666
+            }
+          ],
+          "latency_ms": 254,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-faq](https://stipendiumhungaricum.hu/scholarship-holders/). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-faq",
+              "source_url": "https://stipendiumhungaricum.hu/scholarship-holders/"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-faq",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-faq",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6666666666666666
+            },
+            {
+              "source_id": "sh-regulations-index",
+              "score": 0.6666666666666666
+            }
+          ],
+          "latency_ms": 277,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g27",
+      "question": "May a Stipendium Hungaricum holder use another scholarship for studies outside Hungary?",
+      "source_id": "sh-faq",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.6363636363636364
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.6363636363636364
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6363636363636364
+            }
+          ],
+          "latency_ms": 293,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7272727272727273
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.6363636363636364
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.6363636363636364
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6363636363636364
+            }
+          ],
+          "latency_ms": 260,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g28",
+      "question": "When is a Stipendium Hungaricum holder entitled to the HUF 40,000 monthly accommodation allowance?",
+      "source_id": "sh-general-terms",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-general-terms",
+              "source_url": "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            }
+          ],
+          "latency_ms": 239,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-general-terms](https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-general-terms",
+              "source_url": "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/SH_ASZF.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            },
+            {
+              "source_id": "sh-general-terms",
+              "score": 0.5454545454545454
+            }
+          ],
+          "latency_ms": 241,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g29",
+      "question": "What is the deadline for a complete Stipendium Hungaricum application for bachelor's, master's, and one-tier programmes in 2026/27?",
+      "source_id": "sh-call-ba-ma-2026-27",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6
+            }
+          ],
+          "latency_ms": 253,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-call-ba-ma-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.6
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.6
+            }
+          ],
+          "latency_ms": 253,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    },
+    {
+      "id": "g30",
+      "question": "From which date are the Stipendium Hungaricum Operational Regulations effective?",
+      "source_id": "sh-operational-regulations",
+      "arms": {
+        "base": {
+          "arm": "base",
+          "answer": "[base] Students may work many hours. Not legal advice.",
+          "refused": false,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "base",
+          "generation_mode": "echo-base"
+        },
+        "base_lora": {
+          "arm": "base_lora",
+          "answer": "[lora] Without retrieved sources I should not invent rules. REFUSE: I cannot cite an official source from the locked allow-list for this question. Check OIF, Tempus Public Foundation, or the university.",
+          "refused": true,
+          "has_citation": false,
+          "citations": [],
+          "hits": [],
+          "latency_ms": 0,
+          "model_name": "lora",
+          "generation_mode": "echo-lora"
+        },
+        "rag": {
+          "arm": "rag",
+          "answer": "[base] According to the retrieved passage, see the official text [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.8
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.8
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7
+            },
+            {
+              "source_id": "sh-operational-regulations",
+              "score": 0.6
+            }
+          ],
+          "latency_ms": 273,
+          "model_name": "echo-base",
+          "generation_mode": "echo-base"
+        },
+        "rag_lora": {
+          "arm": "rag_lora",
+          "answer": "[lora] According to the retrieved passage, see the official text [sh-call-phd-2026-27](https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf). Not legal advice.",
+          "refused": false,
+          "has_citation": true,
+          "citations": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "source_url": "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/PhD_Call_for_Applications_2026_27.pdf"
+            }
+          ],
+          "hits": [
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.8
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.8
+            },
+            {
+              "source_id": "sh-call-ba-ma-2026-27",
+              "score": 0.7
+            },
+            {
+              "source_id": "sh-call-phd-2026-27",
+              "score": 0.7
+            },
+            {
+              "source_id": "sh-operational-regulations",
+              "score": 0.6
+            }
+          ],
+          "latency_ms": 228,
+          "model_name": "echo-lora",
+          "generation_mode": "echo-lora"
+        }
+      }
+    }
+  ]
+}

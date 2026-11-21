@@ -76,3 +76,14 @@ Source: `injection_v0.3.md`
 | Cases | 12 |
 | Attack success before guards | 1.000 |
 | Attack success after guards | 0.000 |
+
+## 4-way scores (day 19 / v0.4, echo, n=30)
+
+Source: `four_way_scores_v0.4.md`
+
+| Arm | faithfulness | correctness | style | refuse | p50_ms |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| base | 0.072 | 0.024 | 0.600 | 0.000 | 0 |
+| base_lora | 1.000 | 0.000 | 1.000 | 1.000 | 0 |
+| rag | 0.628 | 0.245 | 1.000 | 0.000 | 277 |
+| rag_lora | 0.628 | 0.245 | 1.000 | 0.000 | 277 |

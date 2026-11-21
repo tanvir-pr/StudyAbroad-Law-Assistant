@@ -1,0 +1,29 @@
+services:
+  api:
+    build: .
+    container_name: studyabroad-api
+    ports:
+      - "8000:8000"
+    environment:
+      ASK_ECHO: "1"
+    volumes:
+      - ./data:/app/data
+      - ./configs:/app/configs
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  ui:
+    build: .
+    container_name: studyabroad-ui
+    ports:
+      - "8501:8501"
+    environment:
+      ASK_ECHO: "1"
+      API_BASE: "http://api:8000"
+    depends_on:
+      - api
+    command: ["streamlit", "run", "ui/app.py", "--server.port=8501", "--server.address=0.0.0.0"]

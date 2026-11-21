@@ -22,3 +22,15 @@ chromadb>=0.5.0
 # Keep these below the kubernetes/chromadb upper pins so Streamlit/botocore stay importable.
 python-dateutil>=2.8.2,<3
 protobuf>=4.25.8,<7
+# Day 16-17: dataset upload, QLoRA (T4), FastAPI /ask skeleton.
+datasets>=2.20.0,<4
+peft>=0.12.0,<0.16
+fastapi>=0.115.0
+uvicorn>=0.30.0
+huggingface-hub>=0.24.0,<2
+# Day 20: mT5 warm-up + ROUGE on human summary refs.
+rouge-score>=0.1.2
+sentencepiece>=0.2.0
+# Day 21: Streamlit UI + optional sacrebleu chrF.
+streamlit>=1.36.0,<1.46
+sacrebleu>=2.4.0

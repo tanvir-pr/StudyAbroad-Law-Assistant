@@ -1,0 +1,39 @@
+{
+  "n": 2,
+  "rows": [
+    {
+      "id": "chg01",
+      "title": "Stipendium operational rules date shift",
+      "source_id": "sh-operational-regulations",
+      "source_url": "https://stipendiumhungaricum.hu/documents/stipendium_hungaricum/OR/SH_OR.pdf",
+      "predicted_changes": [
+        "Added/emphasized: Stipendium Hungaricum Operational Regulations effective 31 August 2026.",
+        "Added/emphasized: Scholars and hosts must use this OR text; older withdrawn packs should not be cited for current obligations.",
+        "Removed/softened: Stipendium Hungaricum Operational Regulations (previous pack).",
+        "Removed/softened: Scholars follow the older published OR text and withdrawn call annexes where still linked on archived pages."
+      ],
+      "expected_changes": [
+        "Effective date becomes 31 August 2026",
+        "Older OR packs are treated as withdrawn for current duties",
+        "Hosts and scholars should cite the new OR PDF"
+      ]
+    },
+    {
+      "id": "chg02",
+      "title": "Study-permit extension filing emphasis",
+      "source_id": "oif-study-permit-extension",
+      "source_url": "https://www.oif.gov.hu/factsheets/how-to-extend-your-residence-permit-for-the-purpose-of-studies-know-how",
+      "predicted_changes": [
+        "Added/emphasized: Extension must be submitted on Enter Hungary at least 30 days before expiry.",
+        "Added/emphasized: Upload the required documents online, then give biometrics at the regional client service within 15 days.",
+        "Removed/softened: Students were sometimes told in informal guides to inquire at a counter first.",
+        "Removed/softened: Document lists varied by office handouts."
+      ],
+      "expected_changes": [
+        "Enter Hungary online filing is mandatory in the current know-how",
+        "30-day-before-expiry timing is explicit",
+        "Biometrics within 15 days after submission is stated"
+      ]
+    }
+  ]
+}

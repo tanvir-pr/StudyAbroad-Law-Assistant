@@ -1,6 +1,6 @@
 # Data card — Hungary student-rules corpus
 
-Draft for day 15. This is not legal advice. The golden set stays frozen at 150 (`eval/GOLDEN_FREEZE.md`) and must not enter fine-tune data. Reviewed Q&A total: `finetune/qa_reviewed.jsonl` (800). Chunking remains fixed 1200/200.
+**v1.0 (day 22).** This is not legal advice. Golden set frozen at 150. Fine-tune Q&A 1000. Summary refs 40. Docker Compose ships API+UI. Full runbook and metrics live in the root README. Chunking remains fixed 1200/200.
 
 ## What this is
 
@@ -29,7 +29,22 @@ Hungary only: student residence permits, work during studies, Stipendium Hungari
 | Hallucination table | `eval/results/hallucination_day11.md` |
 | Injection suite (day 12) | 12 cases → `eval/results/injection_v0.3.md` |
 | Structured tools | `permit_renewal`, `document_checklist`, `office_lookup` |
-| Fine-tune Q&A (day 15) | 800 reviewed (`finetune/qa_reviewed.jsonl`) |
+| Fine-tune Q&A (day 16) | 1000 reviewed (`finetune/qa_reviewed.jsonl`) |
+| Train / val / test | 798 / 98 / 104 (`finetune/splits/`, seed 42) |
+| Dataset card | `finetune/DATASET_CARD.md` |
+| QLoRA (day 17) | r=16, seed 42 → `finetune/runs/qlora_r16_seed42/` |
+| QLoRA alt (day 18) | r=8, seed 7 → `finetune/runs/qlora_r8_seed7/` |
+| 4-way scores (v0.4) | `eval/results/four_way_scores_v0.4.md` (n=30) |
+| Human correctness (30) | `eval/results/human_correctness_30_v0.4.jsonl` |
+| Human summary refs (40) | `t5/human_refs_40.jsonl` (5 lines each) |
+| ROUGE (day 20) | `t5/results/rouge_day20.md` |
+| chrF en/hu→bn (day 21) | `t5/results/chrf_day21.md` |
+| What-changed pairs | 2 (`t5/what_changed_pairs.json`) |
+| UI | Streamlit `ui/app.py` (citation, last-updated, disclaimer) |
+| Docker | `Dockerfile` + `docker-compose.yml` (api:8000, ui:8501) |
+| Clean run | `scripts/clean_run.ps1` / `scripts/clean_run.sh` |
+| Demo shots | `docs/demo/` |
+| API skeleton | FastAPI `/health`, `/ask` (`api/main.py`) |
 | Dense backends compared | FAISS IndexFlatIP, Chroma (copied vectors) |
 | Reranker | BAAI/bge-reranker-v2-m3 |
 | Chunk strategies compared | fixed, recursive, section_aware |

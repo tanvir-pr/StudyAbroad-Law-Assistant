@@ -1,0 +1,77 @@
+{
+  "tag": "day21",
+  "n": 10,
+  "chrf_mean": 0.3403,
+  "rows": [
+    {
+      "id": "bn01",
+      "source_lang": "en",
+      "chrf": 0.5913,
+      "prediction": "শিক্ষার্থীরা পারে মেয়াদ বাড়ান a অধ্যয়নের উদ্দেশ্যে বসবাসের অনুমতি on Enter হাঙ্গেরি at least 30 দিন আগে expiry. এটি আইনি পরামর্শ নয়.",
+      "bn_reference": "শিক্ষার্থীরা মেয়াদ শেষ হওয়ার অন্তত ৩০ দিন আগে Enter Hungary-তে অধ্যয়নের উদ্দেশ্যে বসবাসের অনুমতির মেয়াদ বাড়াতে পারে। এটি আইনি পরামর্শ নয়।"
+    },
+    {
+      "id": "bn02",
+      "source_lang": "en",
+      "chrf": 0.5059,
+      "prediction": "স্টিপেন্ডিয়াম হাঙ্গারিকাম শিক্ষার্থীরা should read OIF factsheets আগে কাজ ঘণ্টা decisions. এটি আইনি পরামর্শ নয়.",
+      "bn_reference": "স্টিপেন্ডিয়াম হাঙ্গারিকাম শিক্ষার্থীদের কাজের ঘণ্টা সংক্রান্ত সিদ্ধান্তের আগে OIF তথ্যপত্র পড়া উচিত। এটি আইনি পরামর্শ নয়।"
+    },
+    {
+      "id": "bn03",
+      "source_lang": "en",
+      "chrf": 0.415,
+      "prediction": "A বসবাসের অনুমতি for studies অবশ্যই follow বিশ্ববিদ্যালয় and OIF rules in হাঙ্গেরি.",
+      "bn_reference": "অধ্যয়নের জন্য বসবাসের অনুমতি হাঙ্গেরিতে বিশ্ববিদ্যালয় ও OIF নিয়ম অনুসরণ করতে হবে।"
+    },
+    {
+      "id": "bn04",
+      "source_lang": "hu",
+      "chrf": 0.3565,
+      "prediction": "A শিক্ষার্থী বসবাসের অনুমতি meghosszabbítását Enter হাঙ্গেরি-n kell benyújtani.",
+      "bn_reference": "শিক্ষার্থীর বসবাসের অনুমতির মেয়াদ বৃদ্ধি Enter Hungary-তে জমা দিতে হবে।"
+    },
+    {
+      "id": "bn05",
+      "source_lang": "en",
+      "chrf": 0.3965,
+      "prediction": "বায়োমেট্রিক্স পারে be required within দিন after মেয়াদ বৃদ্ধি submission.",
+      "bn_reference": "মেয়াদ বৃদ্ধির আবেদনের পর কয়েক দিনের মধ্যে বায়োমেট্রিক্স লাগতে পারে।"
+    },
+    {
+      "id": "bn06",
+      "source_lang": "en",
+      "chrf": 0.2935,
+      "prediction": "বৃত্তি living allowances are paid by the host বিশ্ববিদ্যালয় while শিক্ষার্থী status is active.",
+      "bn_reference": "বৃত্তির জীবনযাপন ভাতা শিক্ষার্থী স্ট্যাটাস সক্রিয় থাকাকালীন হোস্ট বিশ্ববিদ্যালয় দেয়।"
+    },
+    {
+      "id": "bn07",
+      "source_lang": "en",
+      "chrf": 0.2993,
+      "prediction": "This assistant cites official pages only. এটি আইনি পরামর্শ নয়.",
+      "bn_reference": "এই সহায়ক কেবল সরকারি পাতা উদ্ধৃত করে। এটি আইনি পরামর্শ নয়।"
+    },
+    {
+      "id": "bn08",
+      "source_lang": "hu",
+      "chrf": 0.0,
+      "prediction": "A magyar szöveg az angol fordítással való eltérés esetén irányadó.",
+      "bn_reference": "ইংরেজি অনুবাদের সঙ্গে অমিল হলে হাঙ্গেরীয় পাঠই দিকনির্দেশক।"
+    },
+    {
+      "id": "bn09",
+      "source_lang": "en",
+      "chrf": 0.2172,
+      "prediction": "Directive rules on শিক্ষার্থী mobility still need হাঙ্গেরীয় national procedures.",
+      "bn_reference": "শিক্ষার্থী মোবিলিটির নির্দেশিকা থাকলেও হাঙ্গেরীয় জাতীয় পদ্ধতি অনুসরণ করতে হয়।"
+    },
+    {
+      "id": "bn10",
+      "source_lang": "en",
+      "chrf": 0.3282,
+      "prediction": "Upload the academic progress certificate when you মেয়াদ বাড়ান the বসবাসের অনুমতি.",
+      "bn_reference": "বসবাসের অনুমতির মেয়াদ বাড়ানোর সময় একাডেমিক অগ্রগতির সনদ আপলোড করুন।"
+    }
+  ]
+}
